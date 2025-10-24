@@ -1,0 +1,54 @@
+"Appendix A. Model parameters, costs, utilities, variation for the sensitivity analysis, and respective sources",,,,
+Type of variable,Variables,Base case,Variation§,Data source (reference)
+Properties of vaccination,Vaccination coverage – three doses (%),90,30-100,25
+Properties of vaccination,Vaccination age (years),12,,"4, 13"
+Properties of vaccination,Duration of immunity (years),lifetime,10-lifetime,9
+Properties of vaccination,Adherence to booster vaccination (%),90,,25
+Preventive screening properties,Number of tests during the lifetime (n),3,0-10,4
+Preventive screening properties,Age screening started (years),18,,estimated
+Preventive screening properties,Sensitivity of Pap test (in LSIL scenario) (%),70,50-90,"17, 18"
+Preventive screening properties,Sensitivity of Pap test (in HSIL scenario) (%),80,60-90,"19, 20"
+Preventive screening properties,Specificity of Pap test (%),90,,"17, 18"
+Transition probabilities,Develop LSIL after first sexual intercourse 1st year,0.285,,"4, 13"
+Transition probabilities,Develop LSIL after first sexual intercourse 2nd year,0.117,,"4, 13"
+Transition probabilities,Develop LSIL after first sexual intercourse 3rd year,0.114,,"4, 13"
+Transition probabilities,Develop LSIL after first sexual intercourse 4th year,0.075,,"4, 13"
+Transition probabilities,Develop LSIL after first sexual intercourse 5th to 25th year (mean),0.070 (± 0.022),,"4, 13"
+Transition probabilities,Develop LSIL after first sexual intercourse 26th to 50th year (mean),0.053 (± 0.012),,"4, 13"
+Transition probabilities,Develop LSIL after first sexual intercourse After 51st year (mean),0.010 (± 0.008),,"4, 13"
+Transition probabilities,Reduction in the probabilities of developing LSIL attributed to vaccination (%),50,40-70,"6, 7, 2008"
+Transition probabilities,LSIL regression (< 30 years old),0.193,,"14, 15, 16"
+Transition probabilities,LSIL regression (> 30 years old),0.113,,"14, 15, 16"
+Transition probabilities,Develop HSIL from LSIL,0.11,,"14, 15"
+Transition probabilities,Develop invasive cancer from LSIL,0.00075,,"14, 15"
+Transition probabilities,Regression of HSIL,0.175,,"14, 15"
+Transition probabilities,Develop invasive cancer from HSIL,0.0078,,"14, 15"
+Invasive cervical cancer properties,Probability of localized cancer at diagnosis,0.315,,4
+Invasive cervical cancer properties,Probability of regional cancer at diagnosis,0.488,,4
+Invasive cervical cancer properties,Probability of metastatic cancer at diagnosis,0.197,,4
+Invasive cervical cancer properties,Probability of death – localized,0.0165,,23
+Invasive cervical cancer properties,Probability of death – regional,0.1101,,23
+Invasive cervical cancer properties,Probability of death – metastatic,0.305,,23
+Precursor lesions treatment properties,Effectiveness of cryosurgery for LSIL (%),85,,
+Precursor lesions treatment properties,Effectiveness of cryosurgery for HSIL (%),75,,
+Precursor lesions treatment properties,Eligibility for cryosurgery (%),85,,estimated
+Others,Duration of cycle (years),1,,estimated
+Others,Age of sexual initiation (years),13,,4
+Others,Discount rate (%),5,0-10,"12, 31"
+Costs (US$),Vaccination – three doses,150,15 - 500,"26, 27, 28, 29"
+Costs (US$),Booster shot,50,,"26, 27"
+Costs (US$),Pap test,8,,22
+Costs (US$),Medical appointment,5.5,,22
+Costs (US$),Colposcopy,26.8,,22
+Costs (US$),Cryosurgery,26.8,,22
+Costs (US$),Conization,498,,22
+Costs (US$),Hysterectomy type 1,"1,236",,22
+Costs (US$),Localized invasive cancer treatment,"3,702",,4
+Costs (US$),Regional invasive cancer treatment,"8,420",,4
+Costs (US$),Metastatic cancer treatment,"2,625",,4
+Utilities,Normal population,1,,estimated
+Utilities,Completion of Pap test (for 1 year),0.99,,estimated
+Utilities,Colposcopy and conization (for 1 year),0.95,,estimated
+Utilities,Localized invasive cancer,0.76,,24
+Utilities,Regional invasive cancer,0.67,,24
+Utilities,Invasive metastatic cancer,0.48,,
