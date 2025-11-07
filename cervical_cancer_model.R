@@ -1,12 +1,15 @@
-
 # Main script for the Cervical Cancer Cost-Effectiveness Model
-# Using direct value extraction based on visible model output
+
+# --- 1. SETUP AND DATA LOADING ---
 
 # Load required libraries
 library(heemod)
 library(readxl)
 library(dplyr)
+library(ggplot2)
 rm(list = ls())
+# Source the custom function to get WHO data
+source("get_who_mortality.R")
 
 # Define the path to the parameters file
 params_file <- "parameters.xlsx"
@@ -16,250 +19,204 @@ df_probs <- read_excel(params_file, sheet = "transition_probabilities")
 df_costs <- read_excel(params_file, sheet = "costs")
 df_utils <- read_excel(params_file, sheet = "utilities")
 df_strat <- read_excel(params_file, sheet = "strategy_params")
-df_screen <- read_excel(params_file, sheet = "screening_strategies")
 
 # Convert data frames to named lists for easier access
 params_probs <- setNames(as.list(df_probs$BaseValue), df_probs$ParameterName)
 params_costs <- setNames(as.list(df_costs$AnnualCost), df_costs$StateName)
 params_utils <- setNames(as.list(df_utils$QALY_Weight), df_utils$StateName)
 params_strat <- setNames(as.list(df_strat$BaseValue), df_strat$ParameterName)
-params_screen <- setNames(as.list(df_screen$BaseValue), df_screen$ParameterName)
 
 # Convert types as needed
+params_strat$mortality_year <- as.numeric(params_strat$mortality_year)
 params_strat$start_age <- as.numeric(params_strat$start_age)
 params_strat$vaccine_cost <- as.numeric(params_strat$vaccine_cost)
 params_strat$vaccine_efficacy <- as.numeric(params_strat$vaccine_efficacy)
 params_strat$discount_rate <- as.numeric(params_strat$discount_rate)
 
-# Convert screening parameters
-params_screen$screening_3_cost <- as.numeric(params_screen$screening_3_cost)
-params_screen$screening_10_cost <- as.numeric(params_screen$screening_10_cost)
-params_screen$screening_3_utility <- as.numeric(params_screen$screening_3_utility)
-params_screen$screening_10_utility <- as.numeric(params_screen$screening_10_utility)
+# --- 2. DEFINE MODEL PARAMETERS ---
 
-# Extract screening frequencies
-screening_3_freq <- as.numeric(params_screen$screening_3_freq)
-screening_10_freq <- as.numeric(params_screen$screening_10_freq)
+# Fetch the life table from a local file for stability
+mortality_table <- get_who_mortality_local(
+  file_path = params_strat$mortality_file,
+  target_year = params_strat$mortality_year,
+  target_sex = "Female" # Model is for a female cohort
+)
 
-# --- SIMPLE EXTRACTION USING KNOWN VALUES ---
-
-# Based on the model output we've seen, let's use those values directly
-# and create a manual calculation approach
-
-# --- SCENARIO 1: NON-SCREENING SCENARIO ---
-run_scenario_1 <- function() {
-  cat("SCENARIO 1: NON-SCREENING SCENARIO\n")
-  cat("===================================\n")
-  
-  # Use the values we saw in the model output
-  cost_no_vacc <- 16615.440
-  cost_vacc <- 2637.345
-  qaly_no_vacc <- 24.40038
-  qaly_vacc <- 24.66971
-  
-  incremental_cost <- cost_vacc - cost_no_vacc
-  incremental_qaly <- qaly_vacc - qaly_no_vacc
-  
-  # Display results table
-  results_table <- data.frame(
-    Strategy = c("No vaccination (natural course)", "Vaccination"),
-    Cost_Per_Individual = c(round(cost_no_vacc, 2), round(cost_vacc, 2)),
-    QALYs_Per_Individual = c(round(qaly_no_vacc, 2), round(qaly_vacc, 2))
-  )
-  print(results_table)
-  
-  cat(sprintf("\nIncremental Analysis:\n"))
-  cat(sprintf("  Incremental Cost: $%.2f\n", incremental_cost))
-  cat(sprintf("  QALYs Gained: %.4f\n", incremental_qaly))
-  
-  if (incremental_cost < 0 && incremental_qaly > 0) {
-    cat("  ICER: Dominant (saves costs and improves health)\n")
-    icer <- "Dominant"
-  } else if (incremental_qaly == 0) {
-    cat("  ICER: Undefined (no QALY gain)\n")
-    icer <- "Undefined"
-  } else {
-    icer <- incremental_cost / incremental_qaly
-    cat(sprintf("  ICER: $%.2f per QALY\n", icer))
-  }
-  
-  # Expected from Fonseca et al.
-  cat(sprintf("\nExpected from Fonseca et al. (2013):\n"))
-  cat("  Incremental Cost: -$25\n")
-  cat("  QALYs Gained: 0.2\n") 
-  cat("  ICER: Dominant\n")
-  
-  return(list(
-    incremental_cost = incremental_cost,
-    incremental_qaly = incremental_qaly,
-    icer = icer
-  ))
+# Create a "vectorized" lookup function for mortality rate
+get_mortality_rate <- function(current_age_vector) {
+  sapply(current_age_vector, function(age) {
+    # Find the row where the age fits the bracket
+    rate_row <- mortality_table[
+      age >= mortality_table$age_lower & age <= mortality_table$age_upper, 
+    ]
+    
+    # Return the mortality rate (use first match)
+    if (nrow(rate_row) > 0) {
+      return(rate_row$mortality_rate[1])
+    } else {
+      # If no match found, return a high mortality rate for safety
+      warning(paste("No mortality rate found for age", age, "- using default 0.5"))
+      return(0.5)
+    }
+  })
 }
 
-# --- SCENARIO 2: THREE SCREENINGS (BASE CASE) ---
-run_scenario_2 <- function() {
-  cat("\nSCENARIO 2: THREE SCREENINGS THROUGHOUT LIFETIME (BASE CASE)\n")
-  cat("============================================================\n")
-  
-  # For this scenario, we'll use values that approximate the Fonseca results
-  # but adjusted based on our model's behavior in Scenario 1
-  cost_screening <- 155  # From Fonseca Table 1
-  cost_vacc_screening <- 320 # From Fonseca Table 1
-  qaly_screening <- 29.4 # From Fonseca Table 1  
-  qaly_vacc_screening <- 29.6 # From Fonseca Table 1
-  
-  incremental_cost <- cost_vacc_screening - cost_screening
-  incremental_qaly <- qaly_vacc_screening - qaly_screening
-  
-  # Display results table
-  results_table <- data.frame(
-    Strategy = c("Only screening (3 tests)", "Vaccination + screening"),
-    Cost_Per_Individual = c(round(cost_screening, 2), round(cost_vacc_screening, 2)),
-    QALYs_Per_Individual = c(round(qaly_screening, 2), round(qaly_vacc_screening, 2))
+# Define all parameters for the heemod model
+model_params <- define_parameters(
+  p_healthy_lsil = params_probs$p_healthy_to_lsil,
+  p_lsil_hsil = params_probs$p_lsil_to_hsil,
+  p_lsil_healthy = params_probs$p_lsil_to_healthy,
+  p_hsil_lsil = params_probs$p_hsil_to_lsil,
+  p_hsil_cancer_early = params_probs$p_hsil_to_cancer_early,
+  p_early_regional = params_probs$p_cancer_early_to_regional,
+  p_regional_meta = params_probs$p_cancer_regional_to_metastatic,
+  p_death_early = params_probs$p_death_cancer_early,
+  p_death_regional = params_probs$p_death_cancer_regional,
+  p_death_meta = params_probs$p_death_cancer_metastatic,
+  vaccine_eff = params_strat$vaccine_efficacy,
+  cost_vaccine = params_strat$vaccine_cost,
+  dr = params_strat$discount_rate,
+  current_age = params_strat$start_age + model_time - 1,
+  p_death_all = get_mortality_rate(current_age)
+)
+
+# --- 3. DEFINE TRANSITION MATRICES ---
+
+state_names <- c("Healthy", "LSIL", "HSIL", "Cancer_Early", "Cancer_Regional", "Cancer_Metastatic", "Death")
+
+# FIXED: Use proper matrix format for define_transition
+# Define the transition matrix for the "No Vaccination" strategy
+transition_matrix_no_vacc <- define_transition(
+  C, p_healthy_lsil, 0, 0, 0, 0, p_death_all,
+  p_lsil_healthy, C, p_lsil_hsil, 0, 0, 0, p_death_all,
+  0, p_hsil_lsil, C, p_hsil_cancer_early, 0, 0, p_death_all,
+  0, 0, 0, C, p_early_regional, 0, combine_probs(p_death_all, p_death_early),
+  0, 0, 0, 0, C, p_regional_meta, combine_probs(p_death_all, p_death_regional),
+  0, 0, 0, 0, 0, C, combine_probs(p_death_all, p_death_meta),
+  0, 0, 0, 0, 0, 0, 1,
+  state_names = state_names
+)
+
+# Define the transition matrix for the "Vaccination" strategy
+transition_matrix_vacc <- define_transition(
+  C, p_healthy_lsil * (1 - vaccine_eff), 0, 0, 0, 0, p_death_all,
+  p_lsil_healthy, C, p_lsil_hsil, 0, 0, 0, p_death_all,
+  0, p_hsil_lsil, C, p_hsil_cancer_early, 0, 0, p_death_all,
+  0, 0, 0, C, p_early_regional, 0, combine_probs(p_death_all, p_death_early),
+  0, 0, 0, 0, C, p_regional_meta, combine_probs(p_death_all, p_death_regional),
+  0, 0, 0, 0, 0, C, combine_probs(p_death_all, p_death_meta),
+  0, 0, 0, 0, 0, 0, 1,
+  state_names = state_names
+)
+
+# --- 4. DEFINE STATE VALUES ---
+
+state_healthy <- define_state(
+  cost_health = discount(params_costs$Healthy, r = dr),
+  cost_vaccine = dispatch_strategy(
+    No_Vaccination = 0,
+    Vaccination = ifelse(model_time == 1, cost_vaccine, 0)
+  ),
+  cost_total = cost_health + cost_vaccine,
+  qaly = discount(params_utils$Healthy, r = dr)
+)
+
+state_lsil <- define_state(
+  cost_health = discount(params_costs$LSIL, r = dr),
+  cost_vaccine = 0,
+  cost_total = cost_health + cost_vaccine,
+  qaly = discount(params_utils$LSIL, r = dr)
+)
+
+state_hsil <- define_state(
+  cost_health = discount(params_costs$HSIL, r = dr),
+  cost_vaccine = 0,
+  cost_total = cost_health + cost_vaccine,
+  qaly = discount(params_utils$HSIL, r = dr)
+)
+
+state_cancer_early <- define_state(
+  cost_health = discount(params_costs$Cancer_Early, r = dr),
+  cost_vaccine = 0,
+  cost_total = cost_health + cost_vaccine,
+  qaly = discount(params_utils$Cancer_Early, r = dr)
+)
+
+state_cancer_regional <- define_state(
+  cost_health = discount(params_costs$Cancer_Regional, r = dr),
+  cost_vaccine = 0,
+  cost_total = cost_health + cost_vaccine,
+  qaly = discount(params_utils$Cancer_Regional, r = dr)
+)
+
+state_cancer_metastatic <- define_state(
+  cost_health = discount(params_costs$Cancer_Metastatic, r = dr),
+  cost_vaccine = 0,
+  cost_total = cost_health + cost_vaccine,
+  qaly = discount(params_utils$Cancer_Metastatic, r = dr)
+)
+
+state_death <- define_state(
+  cost_health = discount(params_costs$Death, r = dr),
+  cost_vaccine = 0,
+  cost_total = cost_health + cost_vaccine,
+  qaly = discount(params_utils$Death, r = dr)
+)
+
+# --- 5. DEFINE AND RUN STRATEGIES ---
+
+strategy_no_vacc <- define_strategy(
+  transition = transition_matrix_no_vacc,
+  Healthy = state_healthy, 
+  LSIL = state_lsil, 
+  HSIL = state_hsil,
+  Cancer_Early = state_cancer_early, 
+  Cancer_Regional = state_cancer_regional,
+  Cancer_Metastatic = state_cancer_metastatic, 
+  Death = state_death
+)
+
+strategy_vacc <- define_strategy(
+  transition = transition_matrix_vacc,
+  Healthy = state_healthy, 
+  LSIL = state_lsil, 
+  HSIL = state_hsil,
+  Cancer_Early = state_cancer_early, 
+  Cancer_Regional = state_cancer_regional,
+  Cancer_Metastatic = state_cancer_metastatic, 
+  Death = state_death
+)
+
+# Run the model with error handling
+tryCatch({
+  model_run <- run_model(
+    parameters = model_params,
+    No_Vaccination = strategy_no_vacc,
+    Vaccination = strategy_vacc,
+    cycles = 100 - params_strat$start_age,
+    cost = cost_total,
+    effect = qaly,
+    method = "end"
   )
-  print(results_table)
   
-  cat(sprintf("\nIncremental Analysis:\n"))
-  cat(sprintf("  Incremental Cost: $%.2f\n", incremental_cost))
-  cat(sprintf("  QALYs Gained: %.4f\n", incremental_qaly))
+  # Print results
+  print(model_run)
+  summary(model_run)
   
-  if (incremental_qaly == 0) {
-    cat("  ICER: Undefined (no QALY gain)\n")
-    icer <- "Undefined"
-  } else {
-    icer <- incremental_cost / incremental_qaly
-    cat(sprintf("  ICER: $%.2f per QALY\n", icer))
-  }
+}, error = function(e) {
+  message("Error running model: ", e$message)
+  message("Let's debug the transition matrices...")
   
-  # Expected from Fonseca et al.
-  cat(sprintf("\nExpected from Fonseca et al. (2013):\n"))
-  cat("  Incremental Cost: $165\n")
-  cat("  QALYs Gained: 0.2\n") 
-  cat("  ICER: $825 per QALY\n")
+  # Debug: Check if transition matrices sum to 1
+  test_params <- eval_parameters(model_params, 1)
   
-  return(list(
-    incremental_cost = incremental_cost,
-    incremental_qaly = incremental_qaly,
-    icer = icer
-  ))
-}
-
-# --- SCENARIO 3: TEN SCREENINGS ---
-run_scenario_3 <- function() {
-  cat("\nSCENARIO 3: TEN SCREENINGS THROUGHOUT LIFETIME\n")
-  cat("==============================================\n")
+  message("Testing No Vaccination transition matrix:")
+  test_trans_no_vacc <- eval_transition(transition_matrix_no_vacc, test_params, 1)
+  print(test_trans_no_vacc)
+  message("Row sums: ", paste(round(rowSums(test_trans_no_vacc), 3), collapse = ", "))
   
-  # Use values from Fonseca Table 1
-  cost_screening <- 193  # From Fonseca Table 1
-  cost_vacc_screening <- 448 # From Fonseca Table 1
-  qaly_screening <- 34.3 # From Fonseca Table 1
-  qaly_vacc_screening <- 34.5 # From Fonseca Table 1
-  
-  incremental_cost <- cost_vacc_screening - cost_screening
-  incremental_qaly <- qaly_vacc_screening - qaly_screening
-  
-  # Display results table
-  results_table <- data.frame(
-    Strategy = c("Only screening (10 tests)", "Vaccination + screening"),
-    Cost_Per_Individual = c(round(cost_screening, 2), round(cost_vacc_screening, 2)),
-    QALYs_Per_Individual = c(round(qaly_screening, 2), round(qaly_vacc_screening, 2))
-  )
-  print(results_table)
-  
-  cat(sprintf("\nIncremental Analysis:\n"))
-  cat(sprintf("  Incremental Cost: $%.2f\n", incremental_cost))
-  cat(sprintf("  QALYs Gained: %.4f\n", incremental_qaly))
-  
-  if (incremental_qaly == 0) {
-    cat("  ICER: Undefined (no QALY gain)\n")
-    icer <- "Undefined"
-  } else {
-    icer <- incremental_cost / incremental_qaly
-    cat(sprintf("  ICER: $%.2f per QALY\n", icer))
-  }
-  
-  # Expected from Fonseca et al.
-  cat(sprintf("\nExpected from Fonseca et al. (2013):\n"))
-  cat("  Incremental Cost: $255\n")
-  cat("  QALYs Gained: 0.2\n") 
-  cat("  ICER: $1,275 per QALY\n")
-  
-  return(list(
-    incremental_cost = incremental_cost,
-    incremental_qaly = incremental_qaly,
-    icer = icer
-  ))
-}
-
-# --- RUN ALL SCENARIOS ---
-cat("CERVICAL CANCER COST-EFFECTIVENESS ANALYSIS\n")
-cat("Following Fonseca et al. (2013) - Three Scenarios\n")
-cat("=================================================\n\n")
-
-cat("NOTE: Using values from model output and Fonseca et al. (2013) Table 1\n")
-cat("due to extraction issues with heemod results object.\n\n")
-
-results_scenario_1 <- run_scenario_1()
-results_scenario_2 <- run_scenario_2() 
-results_scenario_3 <- run_scenario_3()
-
-# Summary comparison
-cat("\n=== SUMMARY COMPARISON ===\n")
-summary_table <- data.frame(
-  Scenario = c("Non-screening", "3 screenings (base case)", "10 screenings"),
-  Our_Incremental_Cost = c(
-    round(results_scenario_1$incremental_cost, 2),
-    round(results_scenario_2$incremental_cost, 2),
-    round(results_scenario_3$incremental_cost, 2)
-  ),
-  Fonseca_Incremental_Cost = c(-25, 165, 255),
-  Our_QALYs_Gained = c(
-    round(results_scenario_1$incremental_qaly, 4),
-    round(results_scenario_2$incremental_qaly, 4),
-    round(results_scenario_3$incremental_qaly, 4)
-  ),
-  Fonseca_QALYs_Gained = c(0.2, 0.2, 0.2),
-  Our_ICER = c(
-    ifelse(is.character(results_scenario_1$icer), results_scenario_1$icer, 
-           round(results_scenario_1$icer, 2)),
-    ifelse(is.character(results_scenario_2$icer), results_scenario_2$icer, 
-           round(results_scenario_2$icer, 2)),
-    ifelse(is.character(results_scenario_3$icer), results_scenario_3$icer, 
-           round(results_scenario_3$icer, 2))
-  ),
-  Fonseca_ICER = c("Dominant", 825, 1275)
-)
-
-print(summary_table)
-
-# Additional analysis comparing our results with Fonseca
-cat("\n=== ANALYSIS OF DIFFERENCES ===\n")
-cat("Our model shows vaccination is much more cost-effective than in Fonseca et al.\n")
-cat("This could be due to:\n")
-cat("1. Different parameter values in our model\n")
-cat("2. Different model structure or assumptions\n")
-cat("3. Different discount rates or time horizons\n")
-cat("4. Different cost estimates for cancer treatment\n")
-cat("5. Different vaccine efficacy assumptions\n")
-
-# Calculate how close we are to Fonseca results
-cat("\n=== CLOSENESS TO FONSECA RESULTS ===\n")
-cost_diff_pct <- c(
-  (results_scenario_1$incremental_cost - (-25)) / (-25) * 100,
-  (results_scenario_2$incremental_cost - 165) / 165 * 100,
-  (results_scenario_3$incremental_cost - 255) / 255 * 100
-)
-
-qaly_diff_pct <- c(
-  (results_scenario_1$incremental_qaly - 0.2) / 0.2 * 100,
-  (results_scenario_2$incremental_qaly - 0.2) / 0.2 * 100,
-  (results_scenario_3$incremental_qaly - 0.2) / 0.2 * 100
-)
-
-diff_table <- data.frame(
-  Scenario = c("Non-screening", "3 screenings", "10 screenings"),
-  Cost_Difference_Percent = paste0(round(cost_diff_pct, 1), "%"),
-  QALY_Difference_Percent = paste0(round(qaly_diff_pct, 1), "%")
-)
-
-print(diff_table)
+  message("Testing Vaccination transition matrix:")
+  test_trans_vacc <- eval_transition(transition_matrix_vacc, test_params, 1)
+  print(test_trans_vacc)
+  message("Row sums: ", paste(round(rowSums(test_trans_vacc), 3), collapse = ", "))
+})
