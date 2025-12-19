@@ -1,0 +1,942 @@
+Projected Clinical Benefits and Cost-effectiveness of a
+Human Papillomavirus 16/18 Vaccine
+Sue J. Goldie, Michele Kohli, Daniel Grima, Milton C. Weinstein,
+Thomas C. Wright, F. Xavier Bosch, Eduardo Franco
+
+                                                                         In the past several years, there have been substantial advances
+Background: Human papillomavirus (HPV) vaccine may be
+
+
+
+
+                                                                                                                                                     Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+                                                                     in our understanding of the epidemiology of cervical carcino-
+commercially available in a few years. We explored the               genesis and the causal role of oncogenic types of HPV (5–7).
+clinical benefits and cost-effectiveness of introducing an           HPV DNA has been detected in up to 99.7% of all cervical
+HPV16/18 vaccine in a population with an organized cervical          cancers, and infection with one of four types of HPV (i.e., 16,
+cancer screening program. Methods: A computer-based                  18, 45, or 31) accounts for approximately 75% of all cervical
+model of the natural history of HPV and cervical cancer was          cancers diagnosed each year (8,9). Recent results from a phase
+used to project cancer incidence and mortality, life expect-         II trial of an HPV vaccine showed 100% efficacy over an
+ancy (adjusted and unadjusted for quality of life), lifetime         18-month period in preventing persistent HPV16 infection and
+costs, and incremental cost-effectiveness ratios (i.e., the ad-      HPV16-specific cervical intraepithelial neoplasia (CIN) (10).
+ditional cost of a strategy divided by its additional clinical       Larger phase III trials of vaccines targeted against different
+benefit compared with the next most expensive strategy)              oncogenic HPV types are underway (11). A combined strategy
+associated with different cancer prevention policies, includ-        of vaccination for primary prevention of oncogenic HPV infec-
+ing vaccination (initiated at age 12 years), cytologic screen-       tion and cervical cytologic screening for secondary prevention
+ing (initiated at 18, 21, 25, 30, or 35 years), and combined         of cervical cancer offers an intriguing option to further reduce
+vaccination and screening strategies. We assumed that vac-           the mortality from invasive cervical cancer in the United States,
+cination was 90% effective in reducing the risk of persistent        although the potential risks and costs will need to be evaluated.
+HPV16/18 infections and evaluated alternative assumptions                Cost-effectiveness analysis in the fields of health and medi-
+about vaccine efficacy, waning immunity, and risk of re-             cine provides a tool for evaluating the efficiency of resource
+placement with non-16/18 HPV types. Results: Our model               utilization for health care interventions by characterizing differ-
+showed that the most effective strategy with an incremental          ent interventions in terms of the extra cost per added unit of
+cost-effectiveness ratio of less than $60 000 per quality-           health benefit conferred. The basic principle of a decision ana-
+adjusted life year is one combining vaccination at age 12            lytic approach is that all consequences of decisions (e.g., indi-
+years with triennial conventional cytologic screening begin-         vidual clinical outcomes, population-based outcomes, and costs)
+ning at age 25 years, compared with the next best strategy of        should be identified, measured, and valued (e.g., monetary value
+vaccination and cytologic screening every 5 years beginning          of patient time, quality-adjustment of life expectancy). When a
+at age 21 years. This triennial strategy would reduce the            decision analysis compares the relationship between the health
+absolute lifetime risk of cervical cancer by 94% compared            and economic consequences associated with different public
+with no intervention. These results were sensitive to alterna-       health care interventions, it is considered a cost-effectiveness
+tive assumptions about the underlying patterns of cervical           analysis. To explore the relative costs and benefits of introducing
+cancer screening, duration of vaccine efficacy, and natural          a type-specific HPV vaccine in a population with existing cer-
+history of HPV infection in older women. Conclusions: Our            vical cytologic screening, a number of factors must be explicitly
+model predicts that a vaccine that prevents persistent               considered. These include, but are not limited to, the age-specific
+HPV16/18 infection will reduce the incidence of HPV16/18-            incidence of HPV and the natural history of cervical carcino-
+associated cervical cancer, even in a setting of cytologic           genesis; vaccine efficacy, coverage, and acceptability; and cer-
+screening. A program of vaccination that permits a later age         vical cytologic screening practices. No single clinical trial or
+of screening initiation and a less frequent screening interval       longitudinal cohort study will be able to consider all of these
+is likely to be a cost-effective use of health care resources. [J    components. A decision analytic approach using a mathematical
+Natl Cancer Inst 2004;96:604 –15]
+
+                                                                        Affiliations of authors: Department of Health Policy and Management, Har-
+   In countries with organized cervical cancer screening pro-        vard School of Public Health, Boston, MA (SJG, MCW); Innovus Research Inc.,
+grams, there has been a marked reduction in the incidence of         Burlington, Ontario, Canada (MK, DG); Innovus Research (U.S.) Inc., Medford,
+invasive cancer; however, screening and treatment have not been      MA (MCW); Department of Pathology, Columbia University School of Medi-
+equally accessible to all groups of women (1–3). Cost-effective      cine, New York, NY (TCW); Catalan Institute of Oncology, Barcelona, Spain
+public health strategies to reduce the risk of cervical cancer in    (FXB); Departments of Epidemiology and Oncology, McGill University, Mon-
+these vulnerable groups of women are a priority. From health,        treal, Quebec, Canada (EF).
+                                                                        Correspondence to: Sue J. Goldie, MD, MPH, Harvard School of Public
+economic, and national policy perspectives, among the most           Health, 718 Huntington Ave., 2nd Fl., Boston, MA 02115-5924 (e-mail:
+pressing concerns are the escalating costs associated with cur-      sgoldie@hsph.harvard.edu).
+rent screening practices. For example, in the United States, more       See “Notes” following “References.”
+than $6 billion is spent each year on the evaluation and man-        DOI: 10.1093/jnci/djh104
+agement of low-grade lesions, the majority of which would            Journal of the National Cancer Institute, Vol. 96, No. 8, © Oxford University
+regress without intervention (4).                                    Press 2004, all rights reserved.
+
+
+604 ARTICLES                                                        Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004
+simulation model can be a useful tool, in conjunction with
+vaccine efficacy trials, to incorporate data from multiple sources,
+to extrapolate clinical and economic outcomes beyond the time
+horizon of a clinical study, to evaluate more strategies than are
+possible in a single clinical trial, and to assess the relative costs
+and benefits of alternative policies (screening and/or vaccina-
+tion) in reducing mortality from cervical cancer (12–14). Build-
+ing upon the foundation of other cervical cancer models (15–20),
+we developed a computer-based model to project the clinical
+                                                                           Fig. 1. Simple schematic of model. Model simulates the natural history of human
+
+
+
+
+                                                                                                                                                                Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+benefits and cost-effectiveness of an HPV16/18 vaccine in the              papillomavirus (HPV) infection and cervical carcinogenesis while incorporating
+setting of an existing cervical cytologic screening program.               the underlying type-specific HPV distribution within each stage of cervical
+                                                                           disease, by use of a sequence of 6-month transitions among mutually exclusive
+METHODS                                                                    health states. Health states are defined by use of five general categories of HPV
+                                                                           infection (persistent HPV16/18, persistent high-risk non-16/18 HPV types, per-
+                                                                           sistent low-risk HPV types, transient low-risk or high-risk HPV types, and no
+The Model                                                                  HPV), three categories of cervical disease (no neoplasia or cancer, cervical
+                                                                           intraepithelial neoplasia 1 [CIN1], and cervical intraepithelial neoplasia 2,3
+    We developed a Markov model that was capable of simulat-               [CIN2,3]), and three categories of invasive cervical cancer (local, regional, and
+ing the natural history of HPV infection and cervical carcino-             distant). The probabilities governing each of these transitions are conditional on
+genesis and incorporating the underlying type-specific HPV                 the type of HPV infection. HPV infections may be persistent or transient.
+distribution within each stage of cervical disease. A Markov               Persistent infection with a high-risk type is necessary for invasive cervical
+model is composed of a set of mutually exclusive and collec-               cancer. Transient infection with any HPV type may be accompanied by the
+tively exhaustive health states (14). Each person in the model             development of CIN1, and vaccination prior to sexual activity prevents 90% of
+                                                                           persistent infection with HPV16/18.
+can reside in only one health state at any point in time, and all
+persons residing in a particular health state are indistinguishable
+from one another. Transitions occur from one state to another at
+                                                                           The HPV stratum reflecting persistent low-risk types included
+defined recurring intervals (Markov cycle) of equal length (e.g.,
+                                                                           women with all other HPV types.
+monthly or yearly) according to a set of transition probabilities.
+                                                                               The time horizon of the analysis incorporated a woman’s
+These probabilities can be made dependent on population char-
+                                                                           entire lifetime and was divided into equal 6-month increments,
+acteristics, such as age, sex, and chronic disease, by specifying
+                                                                           referred to as Markov cycles, during which women “transi-
+the probabilities as functions of these characteristics, and they
+                                                                           tioned” from one health state to another. The model assumed a
+may be constant or time-dependent. A state transition framework
+                                                                           cohort of 100 000 adolescent girls subjected to age-dependent
+is used in which members of a population are allocated and
+                                                                           probabilities of acquiring and clearing HPV infection starting at
+subsequently reallocated into different health states over time.
+                                                                           age 13 years. Women with either transient or persistent HPV
+Values are assigned to each health state to reflect the cost and
+                                                                           infection could develop histopathologic cervical changes, and
+utility of spending one Markov cycle in that state. The contri-
+                                                                           those with CIN1 or with CIN2,3 could progress, regress, or stay
+bution of these values to population outcomes (e.g., life expect-
+                                                                           the same. The probabilities governing each of these transitions
+ancy, quality-adjusted life expectancy, and lifetime costs) de-
+                                                                           were conditional on the type of HPV infection. We assumed that
+pends on the length of time spent in each state. By synthesizing
+                                                                           only women with persistent HPV infections developed CIN2,3
+data on costs, effects, and quality of life, a Markov model
+                                                                           and invasive cancer. In each cycle, women with invasive cancer
+permits comparison of the outcomes associated with different
+                                                                           could develop symptoms or progress to the next stage of cancer.
+clinical strategies.
+                                                                           We assumed that symptomatic women with invasive cancer
+    In our model, the natural history of disease was modeled as a
+                                                                           received stage-specific treatment for their disease and were
+sequence of 6-month transitions among mutually exclusive
+                                                                           subject to the corresponding stage-specific survival rates. From
+health states (Fig. 1). These states were defined by use of five
+                                                                           every health state and in every cycle, women faced competing
+general categories of HPV infection (persistent HPV16/18, per-
+                                                                           all-cause mortality risks (32).
+sistent high-risk non-16/18 HPV types, persistent low-risk HPV
+types, transient low-risk or high-risk HPV types, and no HPV),             Adding Vaccination to Current Cervical Cancer Screening
+three categories of cervical disease (no neoplasia or cancer,              in the United States
+cervical intraepithelial neoplasia 1 [CIN1], and cervical intra-
+epithelial neoplasia 2,3 [CIN2,3]), and three categories of inva-             We first conducted an analysis to estimate the clinical benefits
+sive cervical cancer (local, regional, and distant) (21,22). Studies       and costs associated with the introduction of an HPV16/18
+that have examined the risk of cervical neoplasia associated with          vaccine in the setting of cervical cancer screening and conser-
+persistent HPV infection have defined “persistence” in a variety           vatively assumed that vaccination would not alter current
+of ways (23–30). We stratified the HPV sector of health states             screening practice. We based initial estimates for screening
+into categories that were consistent with the classification used          behavior on data from the Centers for Disease Control and
+in the main clinical studies from which the parameter estimates            Prevention’s Behavioral Risk Factor Surveillance System, which
+for the incidence of HPV were derived (23,30,31). The HPV                  estimated that 5.2% of women had never been screened and that
+stratum reflecting persistent high-risk types of HPV was further           70.5% of those women who had received a Papanicolaou (Pap)
+stratified into two groups (one to represent HPV16 or HPV18                test had received it in the last year. An additional 12.6%, 4.3%,
+and the other to represent high-risk non-16 or non-18 HPV                  and 3.0% of women reported receiving a Pap test within the last
+types, including 31, 33, 35, 39, 45, 51, 52, 56, 58, 59, and 68).          2 years, 3 years, and 5 years, respectively (33). We assumed that
+
+Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004                                                                ARTICLES 605
+9.6% of women were screened more than 5 years ago. The                protection). (6) Finally, immunity would not wane over time.
+model was then calibrated to the lifetime risk of cervical cancer     Because of the obvious uncertainty as to the real-world perfor-
+reported in the National Cancer Institute’s Surveillance, Epide-      mance of a prophylactic vaccine against HPV16/18, we explored
+miology, and End Results Program (34). The model was used to          the implications of alternative assumptions to each of those used
+evaluate the cost-effectiveness of an HPV16/18 vaccine and to         in the base case.
+explore the impact of changes in 1) vaccine efficacy, defined as          For each strategy, we tracked clinical events (e.g., HPV
+a reduction in the probability of acquiring a persistent HPV16/18     infection), life expectancy–adjusted and unadjusted for quality
+infection; 2) vaccine coverage, defined as the proportion of the      of life, and costs (expressed in 2002 U.S. dollars) accrued by this
+cohort that receive three doses of vaccine (actual coverage) and      hypothetical cohort throughout their lifetimes. Following the
+
+
+
+
+                                                                                                                                                Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+the proportion of the cohort fully immunized (effective cover-        recommendations of the Panel on Cost-Effectiveness in Health
+age); and 3) duration of vaccine efficacy, defined as the period      and Medicine (14), we adopted a societal perspective and ex-
+before waning immunity.                                               pressed clinical benefits as quality-adjusted life years gained to
+                                                                      reflect both the gains in longevity and quality of life associated
+Primary and Secondary Cervical Cancer Prevention                      with effective interventions to prevent cervical cancer. Future
+Strategies                                                            costs and life years were discounted at an annual rate of 3%. The
+                                                                      results of a cost-effectiveness analysis are summarized by use of
+   We then assessed the costs and clinical benefits associated
+                                                                      an incremental cost-effectiveness ratio. In this ratio, all health
+with a variety of hypothetical cervical cancer control policies
+                                                                      outcomes associated with a particular strategy (compared with
+consisting of a primary prevention component (i.e., vaccination)
+                                                                      an alternative) are included in the denominator, and all costs or
+and/or a secondary cervical cancer prevention component (i.e.,
+                                                                      changes in use of resources with a particular strategy (compared
+cervical cytologic screening starting at a specific age and con-
+                                                                      with an alternative) are included in the numerator. The incre-
+ducted at a specific frequency). We evaluated screening intervals
+                                                                      mental cost-effectiveness ratio for a strategy is computed in
+of 1–5 years with conventional and liquid-based cytology initi-
+                                                                      reference to the next most effective option after eliminating
+ated at age 18, 21, 25, 30, or 35 years. To permit comparison of
+                                                                      strategies that are dominated (i.e., strategies that are more costly
+our findings with previously published cost-effectiveness anal-
+                                                                      and less effective than other options) and strategies that are ruled
+yses of cervical cancer screening (16 –20,35–39), we assumed
+                                                                      out by extended (weak) dominance (i.e., strategies that have
+100% compliance with vaccination and screening but varied
+                                                                      higher incremental cost-effectiveness ratios than more effective
+these estimates widely in sensitivity analyses.
+                                                                      options).
+Assumptions                                                               Statistical issues in cost-effectiveness studies are different
+                                                                      from those that arise in experiments or other data analyses.
+   For strategies that incorporated cytologic screening, we made      Rather than testing hypotheses using traditional statistical sig-
+the following assumptions: 1) All women with abnormal Pap             nificance as a criterion, model-based evaluation studies aim to
+test results, which were classified as a low-grade squamous           portray the scope and nature of the uncertainties that surround
+intraepithelial lesion (LSIL) or above, received colposcopy and       the estimates of costs, benefits, and cost-effectiveness ratios that
+a biopsy examination (40). 2) Women with a cytologic screening        they produce through the use of a sensitivity analysis (14). In a
+result of atypical squamous cells of uncertain significance un-       sensitivity analysis, some critical component in the calculation is
+derwent HPV DNA testing (using either the residual sample             varied over a plausible range, and the cost-effectiveness ratio is
+from a liquid-based cytology specimen or, for conventional            recalculated. The resulting difference in the ratio provides some
+cytology, a sample co-collected at the time of the initial screen-    indication of how sensitive the results might be to a change in
+ing) (41). 3) Women with a conventional cytologic screening           that parameter. We conducted extensive sensitivity analyses to
+result of atypical squamous cells of uncertain significance were      evaluate the stability of our conclusions over a wide range of
+managed with immediate colposcopy or repeat cytologic screen-         parameter estimates and structural assumptions.
+ing in 6 months. 4) Colposcopy and biopsy examination accu-
+rately determined the true underlying histology of the cervix. 5)     Data
+All women with histologically confirmed CIN2,3 or worse were
+treated appropriately. 6) Women with histologically confirmed            Selected data are shown in Table 1 (42–97). Transition prob-
+CIN1 were not treated but were monitored every 6 months until         abilities required by the model that were not available from
+they regressed to normal or progressed to CIN2,3.                     primary data were obtained by use of calibration methods de-
+   For strategies that incorporated vaccination, we made the          scribed elsewhere (15–19). We assessed the face validity of the
+following assumptions for the base case: 1) All (100%) of the         model by projecting a series of intermediate-term and long-term
+adolescent cohort would be successfully vaccinated at age 12          outcomes for which there were suitable data in the absence of
+years (actual coverage) before their first exposure to HPV. 2) All    screening (e.g., age-specific cervical cancer incidence and stage
+12-year-olds would have received three doses of the vaccine and       distribution of invasive disease) (74,75). Using published data to
+would be fully immunized by age 13 years (effective coverage).        establish the range of HPV types within LSIL, high-grade SIL
+3) Among women successfully vaccinated, the probability of            (HSIL), and cancer (1,9,38,41,66 –71), we calibrated the model
+acquiring persistent infection with HPV16/18 would be reduced         to the best available data on age-specific HPV infection, LSIL,
+by 90% (efficacy). 4) Recipients of an effective vaccine were         HSIL, and cancer (34,46 –50,63– 65). Model corroboration was
+subjected to the competing risks associated with acquisition of       assessed by comparing the predicted outcomes in the setting of
+other types of HPV (replacement). 5) Vaccination would have           screening at different intervals with those of other published
+no impact on HPV16/18 infections that were destined to be             analyses (19,20). Estimates for the sensitivity and specificity of
+transient and no effect on any non-HPV16/18 infections (cross-        cervical cytologic screening were obtained from large clinical
+
+606 ARTICLES                                                         Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004
+Table 1. Selected model variables: baseline values and ranges used in         Table 1 (continued).
+sensitivity analysis*
+                                                                              Variable                                              Base case            Range
+Variable                                        Base case         Range
+                                                                              Diagnostic and treatment costs, $U.S.**
+Incidence and clearance of HPV infection                                        Colposcopy and biopsy                                  436             200–600
+     (42–50)†                                                                   CIN1                                                  1264             800–1706
+  Normal to persistent HPV DNA                                                  CIN2,3                                                2833            1500–3275
+     Age ⬍35 y                                 0.010–0.030          †           Stage I                                             21 533          16 150–26 916
+                                                                                Stage II                                            23 046          17 285–28 808
+     Age ⱖ35 y                                 0.002–0.006          †           Stage III                                           27 067          20 300–33 834
+  Normal to transient HPV DNA                                                   Stage IV                                            36 912          27 684–46 140
+     Age ⬍35 y
+
+
+
+
+                                                                                                                                                                        Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+                                               0.030–0.070          †
+     Age ⱖ35 y                                 0.002–0.010          †         Health-related quality of life (88,96,97)††
+  HPV DNA to normal                                                             Quality weights for detected invasive
+     Age ⬍35 y                                 0.100–0.460          †           cancer
+     Age ⱖ35 y                                 0.100–0.460          †             Stage I                                                 0.65         0.49–0.81
+                                                                                  Stage II                                                0.56         0.42–0.70
+Natural history of CIN (51–71)                                                    Stage III                                               0.56         0.42–0.70
+  HPV DNA to CIN1                                                                 Stage IV                                                0.48         0.36–0.60
+    Age ⬍35 y                                  0.030–0.060          †           Quality weights after treatment for
+    Age ⱖ35 y                                  0.007–0.015          †           invasive cancer
+  HPV DNA to CIN2,3                                                               Stage I                                                 0.97         0.73–0.99
+    Age ⬍35 y                                  0.001–0.006          †             Stage II                                                0.90         0.68–0.98
+    Age ⱖ35 y                                  0.004–0.025          †             Stage III                                               0.90         0.68–0.98
+                                                                                  Stage IV                                                0.62         0.47–0.78
+  CIN1 to CIN2,3‡
+    Age ⬍35 y                                  0.008–0.050          †
+    Age ⱖ35 y                                  0.037–0.220          †            *Selected parameter values used for the baseline analysis are shown. Range
+  CIN2,3 to invasive cancer‡                                                  for each parameter indicates the upper and lower bound for each value used in
+    Age ⬍35 y                                  0.001–0.002          †         sensitivity analysis. In a sensitivity analysis, some critical component in the
+    Age 35–64 y                                0.006–0.012          †         calculation is varied over a plausible range, and the cost-effectiveness ratio is
+    Age ⱖ65 y                                  0.001–0.020          †         recalculated. The resulting difference in the ratio provides some indication of
+  CIN1 to HPV                                  0.440–0.540          †         how sensitive the results might be to a change in that parameter. Clinical
+  CIN1 to normal                               0.110–0.540          †         estimates (base case and range) are reported as 6-month probabilities unless
+  CIN2,3 to HPV                                0.010–0.030          †         otherwise noted. HPV ⫽ human papillomavirus; CIN ⫽ cervical intraepithelial
+  CIN2,3 to normal                             0.001–0.003          †         neoplasia.
+Natural history of invasive cervical cancer§                                     †Plausible range was established with age-specific values where indicated.
+    (2,72–75)                                                                 HPV infection was categorized as persistent high-risk HPV16/18, persistent
+  Probability of progression                                                  high-risk non-16/18 HPV, persistent low-risk types, and any type of transient
+    Stage I to Stage II                            0.1500     0.1125–0.1875   HPV. Details of point estimates for each age group available from authors on
+    Stage II to Stage III                          0.1600     0.1200–0.2000   request.
+    Stage III to Stage IV                          0.2252     0.1689–0.2815      ‡Persistent HPV infection was assumed to be necessary for progression to
+  Probability of developing symptoms                                          CIN2,3 and invasive cancer.
+    Stage I                                        0.0750     0.0563–0.0938      §Probabilities for progression through cancer stages and for development of
+    Stage II                                       0.1125     0.0844–0.1406   stage-specific symptoms imputed through previously described methods (17–19,72–
+    Stage III                                      0.3000     0.2250–0.3750
+                                                                              75).
+    Stage IV                                       0.4500     0.3375–0.5625
+  Probability of survival at 5 years                                             㛳Estimates for sensitivity conditional on age and cervical lesion severity were used
+    Stage I                                        0.84         0.63–0.98     in sensitivity analyses.
+    Stage II                                       0.66         0.49–0.83        ¶The vaccination series includes three doses (estimated at $100 each, based on the
+    Stage III                                      0.38         0.28–0.48     assumptions made by the Institute of Medicine) (88), as well as three brief clinic
+    Stage IV                                       0.11         0.08–0.14     visits, surveillance, and educational costs.
+                                                                                 #Costs reflect a weighted average of normal and abnormal cytologic smears.
+Vaccine characteristics (10,11)                                                  **Aggregate costs reflect the sum of the costs of the procedure, office visit, and
+  Vaccine efficacy, %                            90               50–100      woman’s time.
+  Age at vaccination, y                          12               12–15
+                                                                                 ††Age-related quality weights (weights for each health state were multiplied by
+  Vaccine coverage, %                           100               50–100
+                                                                              the time spent in the state and then summed to calculate the number of quality-
+Screening test characteristics (76–87)㛳                                       adjusted life years) for noncancer states were based on published data from the
+  Sensitivity of liquid-based cytology, %         84              69–88       Health Utilities Index (Mark II Scoring System) and ranged from 0.92 in women
+  Specificity of liquid-based cytology, %         88              77–93       aged 25–34 years to 0.74 in women older than 85 years.
+  Sensitivity of conventional cytology, %         66              34–86
+  Specificity of conventional cytology, %         97              88–99
+
+Vaccination costs, $U.S. (88–90)¶                                             trials and recent comprehensive reviews (76 – 87). Because of
+  Vaccination series                            377              188–565      the uncertainty in screening test performance after the introduc-
+  Patient time cost                              16                8–24       tion of a type-specific vaccine, we varied these parameters over
+Costs of cervical cancer screening and                                        a wide plausible range in a sensitivity analysis.
+    treatment, $U.S. (91–95)
+  Screening costs                                                                 Selected costs are shown in Table 1 (88 –95). We assumed
+    Conventional cytology#                        15–51           12–75       that vaccination required the costs of three brief clinic visits,
+    Liquid-based cytology#                        28–64           20–80       surveillance and educational costs, and patient (or parent) time
+    HPV DNA test (Hybrid Capture 2)               49              30–200      costs. We assumed that all adolescents and their parents would
+    Office visit                                  22              11–50
+    Patient time cost                             21              11–200      require a 10-minute pre-vaccination counseling session with a
+                                                                              registered nurse or nurse practitioner. Data from the U.S. Bureau
+                                                                              of Labor Statistics were used to assign a cost for the time
+
+Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004                                                                         ARTICLES 607
+required from each provider (90). To account for inflation, all
+costs were converted to 2002 U.S. dollars by use of the Medical
+Care Component of the Consumer Price Index (95). We included
+the costs of additional booster doses in sensitivity analyses.
+   Direct medical costs for screening and treatment were derived
+from previously published data (16,91–94). Costs of invasive
+cancer were obtained from published results, including a report
+from the Agency for Health Care Policy and Research (50) that
+used data from the Medstat MarketScan database. The time
+
+
+
+
+                                                                                                                                                     Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+spent undergoing screening was derived from a prospective
+study of time costs associated with cervical cancer screening
+(94), and previously published data incorporating transportation
+costs were used in sensitivity analyses.
+   Selected quality weights are shown in Table 1 (88,96,97).
+Quality weights for each health state, which ranged from 0 to
+1, where a weight of 1 corresponds to perfect health and a
+weight of 0 corresponds to a health state judged equivalent to
+death, were multiplied by the time spent in the state and then
+summed to calculate the number of quality-adjusted life
+years. Age-specific quality weights were used for noncancer
+states, as recommended by the Panel on Cost-Effectiveness in
+Health and Medicine (14,96). The quality weights for the time
+spent in cancer health states were derived from utility esti-
+mates by the Committee to Study Priorities for Vaccine
+Development (Institute of Medicine) (88) and varied with
+stage of disease. The plausible ranges for these quality
+weights were established by use of the lowest and highest
+values reported in the literature (88,96,97). Sensitivity anal-
+yses were conducted to evaluate the impact of quality-of-life        Fig. 2. Impact of an human papillomavirus (HPV) 16/18 vaccine on low-grade
+                                                                     squamous intraepithelial lesion (LSIL) and high-grade SIL (HSIL). The impact
+decrements associated with receiving an abnormal cytologic           of introducing an HPV16/18 vaccine, in the setting of current cervical cancer
+screening result.                                                    screening, on the age-specific prevalence of LSIL (A) and HSIL (B) is shown.
+                                                                     The reduction in total cases of LSIL and HSIL (caused by any type of HPV) is
+                                                                     a function of both the proportion of lesions attributable to HPV16/18 and the
+RESULTS                                                              vaccine efficacy.
+
+Model Validity
+                                                                     Cost-effectiveness of an HPV16/18 Vaccine With Current
+   In the absence of screening, the absolute lifetime risk of        Cervical Cancer Screening
+cervical cancer predicted by the model is 3.64%. The age-
+specific incidence of cervical cancer peaks at an age of 48 years        Table 2 shows the discounted costs, quality-adjusted life
+at a rate of 81.2 cases of cervical cancer per 100 000 women.        expectancy, and the estimated lifetime risk of cervical cancer
+The model predicts that 65% of all cancers are caused by             associated with the introduction of a type-specific HPV vaccine
+HPV16/18, 26% are caused by non-16/18 HPV types, and 9%              (ranging in efficacy from 70% to 100%) in the setting of current
+are preceded by persistent infections with low-risk HPV types.       cervical cancer screening practice in the United States. If we
+                                                                     conservatively assume that vaccination would not alter screen-
+Impact of an HPV16/18 Vaccine on LSIL and HSIL With                  ing practice, an HPV16/18 vaccine ranging in efficacy from 70%
+Current Cervical Cancer Screening                                    to 100% would reduce the lifetime risk of cancer by 46%– 66%
+                                                                     (i.e., the absolute lifetime risk would be reduced from 0.86% to
+    Fig. 2 shows the impact of introducing an HPV16/18 vaccine       0.30%– 0.47%), compared with current screening. The incre-
+in the setting of current cervical cancer screening on the age-      mental cost-effectiveness ratio of an HPV16/18 vaccine would
+specific prevalence of LSIL and HSIL. The reduction in total         vary from $20 600 per quality-adjusted life year with a vaccine
+cases of LSIL and HSIL (caused by any type of HPV) is a              that prevents 100% of persistent HPV16/18 infections to
+function of the proportion of lesions attributable to HPV16/18       $33 700 per quality-adjusted life year with a vaccine that pre-
+and the efficacy of the vaccine. Because the proportion of HSIL      vents 70% of persistent HPV16/18 infections.
+attributable to HPV16/18 is greater than the proportion of LSIL      Cost-effectiveness of Primary and Secondary Cervical
+attributable to HPV16/18, there is a greater reduction in the        Cancer Prevention Strategies
+projected age-specific prevalence of HSIL than LSIL. In the
+presence of an organized screening program, the model predicts          We then assessed the costs and clinical benefits associated
+that the absolute difference in the prevalence of HSIL will be       with three basic strategies, including 1) no vaccination and no
+relatively small because HSIL is already a relatively rare event.    screening, 2) no vaccination and cytologic screening, and 3)
+
+608 ARTICLES                                                        Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004
+Table 2. Discounted costs, quality-adjusted life expectancy, lifetime risk of cancer, and incremental cost-effectiveness of vaccination in the setting of current
+screening in the United States, by varying vaccine efficacy*
+
+                                        Total lifetime           Incremental               Quality adjusted life               Lifetime risk        Cost-effectiveness
+Screening strategy                       costs, $U.S.            costs, $U.S.              expectancy, QALY                    of cancer, %        ratio, $U.S./QALY†
+
+Current screening program                   1111                     —                             25.9815                         0.86                     —
+Vaccination at 70% efficacy                 1421                     310                           25.9907                         0.47                   33 700
+Vaccination at 80% efficacy                 1409                     298                           25.9921                         0.41                   28 100
+Vaccination at 90% efficacy                 1400                     289                           25.9934                         0.36                   24 300
+Vaccination at 100% efficacy                1384                     274                           25.9948                         0.30                   20 600
+
+
+
+
+                                                                                                                                                                            Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+   *Average per woman lifetime costs, quality-adjusted life expectancy, and the estimated lifetime risk of cervical cancer associated with the introduction of a
+type-specific HPV vaccine (ranging in efficacy from 70% to 100%) in the setting of current cervical cancer screening practice in the United States. Each vaccination
+strategy is being compared with the current screening program in the United States. Costs have been rounded to the nearest whole dollar. QALY ⫽ quality-adjusted
+life year.
+   †The difference in cost divided by the difference in quality-adjusted life expectancy for each strategy compared with the current screening program.
+
+
+vaccination and cytologic screening. The discounted costs,                           annual basis provides an additional reduction in the lifetime risk
+quality-adjusted life expectancy, and reduction in lifetime risk of                  of cancer of less than 2% compared with biennial strategies, yet
+cancer associated with each of the potential 80 cervical cancer                      is accompanied by an appreciable increase in costs. For exam-
+prevention strategies were calculated (data available from au-                       ple, vaccination at age 12 years with annual liquid-based cyto-
+thors upon request). The non-dominated strategies (i.e., strate-                     logic screening starting at age 18 years costs more than U.S.$3.5
+gies that were more effective and less costly or that were more                      million per quality-adjusted life year, compared with the next
+effective and more cost-effective than all other options) are                        best non-dominated strategy of vaccination at age 12 years with
+shown in Table 3. Strategies shown differ by type of cytologic                       annual conventional cytologic screening starting at age 18 years.
+screening (e.g., conventional versus liquid-based screening, age
+at which screening is initiated, frequency of screening, and use                     Impact of Vaccine Efficacy on Cost-effectiveness of
+of vaccination [90% efficacy] as an adjunct to cytologic screen-                     Cervical Cancer Prevention Strategies
+ing). The most effective strategy with an incremental cost-
+effectiveness ratio of less than $60 000 per quality-adjusted life                       Table 4 presents the reduction in lifetime risk of cervical
+year is one combining vaccination at age 12 years with triennial                     cancer, quality-adjusted life expectancy, and total lifetime costs
+conventional cytologic screening beginning at age 25 years,                          associated with the non-dominated cervical cancer control strat-
+which would reduce the lifetime risk of cancer by 94% com-                           egies for four hypothetical HPV16/18 vaccines that vary in
+pared with no intervention. Increasing screening frequency with                      efficacy from 70% to 100%. Strategies that would reduce the
+either liquid-based or conventional cytologic screening to an                        lifetime risk of cervical cancer by less than 85% are not shown
+
+Table 3. Discounted costs, quality-adjusted life expectancy, reduction of lifetime risk of cervical cancer, and cost-effectiveness of different cervical cancer
+prevention policies*
+
+                                                 Age at                                                                               Reduction in             Cost-
+                           Cytology            screening         Screening            Lifetime         Quality-adjusted life         lifetime cancer       effectiveness,
+Strategy                     type             initiation, y      interval, y        costs, $U.S.       expectancy, QALYs                  risk, %        ($U.S./QALY)†
+
+No intervention               —                    —                 —                  235                  25.9112                       —                    —
+Screening only           Conventional              35                5                  386                  25.9607                      67.4                    3100
+Screening only           Conventional              30                5                  443                  25.9696                      71.4                    6400
+Screening only           Conventional              25                5                  526                  25.9765                      73.9                  12 100
+Screening/vaccine        Conventional              30                5                  748                  25.9893                      88.9                  17 200
+Screening/vaccine        Conventional              25                5                  828                  25.9919                      89.8                  31 200
+Screening/vaccine        Conventional              21                5                  896                  25.9930                      89.7                  57 400
+Screening/vaccine‡       Conventional              25                3                 1030                  25.9953                      94.0                  58 500
+Screening/vaccine        Conventional              21                3                 1144                  25.9967                      95.4                  83 000
+Screening/vaccine        Conventional              21                2                 1450                  25.9986                      96.6                 164 400
+Screening/vaccine        Conventional              18                2                 1581                  25.9990                      96.8                 280 200
+Screening/vaccine        Liquid-based              18                2                 2314                  26.0002                      98.0                 617 900
+Screening/vaccine        Conventional              18                1                 2581                  26.0006                      98.5                 771 300
+Screening/vaccine        Liquid-based              18                1                 3992                  26.0009                      99.0               3 867 500
+
+   *Average per woman lifetime costs, quality-adjusted life expectancy, and reduction in lifetime risk of cervical cancer associated with three basic cervical cancer
+prevention strategies: 1) no vaccination and no screening, 2) no vaccination and cytologic screening, and 3) vaccination and cytologic screening. Strategies differ
+by type of cytologic screening (e.g., conventional versus liquid-based screening, age at which screening is initiated, frequency of screening, and use of vaccination
+with 90% efficacy as an adjunct to cytologic screening). Strategies shown are the most efficient strategies (i.e., non-dominated) of a total of 80 strategies evaluated.
+Strategies that were dominated were either less effective and more costly (i.e., strongly dominated) or more costly and less cost-effective (i.e., weakly dominated)
+than the strategies shown. Vaccine efficacy was defined as prevention of 90% of persistent human papillomavirus 16/18 (HPV16/18) infections. Costs have been
+rounded to the nearest whole dollar. QALY ⫽ quality-adjusted life-year.
+  †The difference in cost divided by the difference in quality-adjusted life expectancy for each strategy compared with the next best strategy. All strategies are
+assumed to be equally available.
+  ‡Cost-effectiveness ratios are often placed in context by comparisons with interventions that are widely mandated. As such, a cost-effectiveness ratio of less than
+$75 000 per quality-adjusted life year gained would be considered good value for resources (i.e., a cost-effective intervention) in the United States (14).
+
+
+Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004                                                                               ARTICLES 609
+Table 4. Discounted costs, quality-adjusted life expectancy, reduction in cancer incidence, and incremental cost-effectiveness of selected cervical cancer
+prevention policies for vaccine efficacy varying from 70% to 100%*
+
+                                                                                                                                                             Cost-
+                                                         Age at                            Total average     Quality-adjusted        Reduction in        effectiveness
+                                     Cytology          screening        Screening             lifetime       life expectancy,       lifetime cancer      ratio, $U.S./
+Strategy                               type           initiation, y     interval, y         costs, $U.S.          QALYs                  risk, %           QALY)†
+
+No screening/no vaccine                 —                  —                —                   235              25.9112                  —                   —
+
+Vaccine with 100% efficacy
+  Screening/vaccine‡               Conventional            35                5                  679              25.9888                 89.6                 12 300‡
+
+
+
+
+                                                                                                                                                                          Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+  Screening/vaccine                Conventional            30                5                  738              25.9916                 90.9                 21 400
+  Screening/vaccine                Conventional            25                5                  818              25.9936                 91.6                 38 800
+  Screening/vaccine                Conventional            25                3                 1020              25.9965                 95.1                 70 900
+  Screening/vaccine                Conventional            21                3                 1133              25.9976                 95.3                103 700
+  Screening/vaccine                Conventional            18                2                 1438              25.9991                 97.2                201 800
+  Screening/vaccine                Conventional            18                2                 1568              25.9994                 98.1                354 200
+  Screening/vaccine                Liquid-based            18                2                 2301              26.0004                 98.3                766 300
+  Screening/vaccine                Conventional            18                1                 2567              26.0007                 98.8                963 400
+  Screening/vaccine                Liquid-based            18                1                 3977              26.0010                 99.2              4 863 000
+
+Vaccine with 90% efficacy
+  Screening/vaccine§               Conventional            30                5                  748              25.9893                 88.9                 17 300§
+  Screening/vaccine                Conventional            25                5                  828              25.9919                 89.8                 31 200
+  Screening/vaccine                Conventional            21                5                  896              25.9930                 89.7                 57 400
+  Screening/vaccine                Conventional            25                3                 1030              25.9953                 94.0                 58 500
+  Screening/vaccine                Conventional            21                3                 1144              25.9967                 95.4                 83 000
+  Screening/vaccine                Conventional            21                2                 1450              25.9986                 96.6                164 400
+  Screening/vaccine                Conventional            18                2                 1581              25.9990                 96.8                280 200
+  Screening/vaccine                Liquid-based            18                2                 2314              26.0002                 98.0                617 900
+  Screening/vaccine                Conventional            18                1                 2581              26.0006                 98.5                771 300
+  Screening/vaccine                Liquid-based            18                1                 3992              26.0009                 99.0              3 867 500
+
+Vaccine with 80% efficacy
+  Screening/vaccine㛳               Conventional            30                5                  758              25.9870                 86.9                 22 200㛳
+  Screening/vaccine                Conventional            25                5                  839              25.9901                 88.0                 26 200
+  Screening/vaccine                Conventional            21                5                  907              25.9915                 88.1                 47 900
+  Screening/vaccine                Conventional            25                3                 1040              25.9942                 92.9                 50 000
+  Screening/vaccine                Conventional            21                3                 1154              25.9958                 93.2                 69 500
+  Screening/vaccine                Conventional            21                2                 1461              25.9980                 95.9                138 800
+  Screening/vaccine                Conventional            18                2                 1592              25.9986                 96.0                232 400
+  Screening/vaccine                Liquid-based            18                2                 2327              26.0000                 97.6                518 400
+  Screening/vaccine                Conventional            18                1                 2595              26.0004                 98.3                645 800
+  Screening/vaccine                Liquid-based            18                1                 4007              26.0009                 98.9              3 205 600
+
+Vaccine with 70% efficacy
+  Screening/vaccine¶               Conventional            25                3                 1050              25.9931                 91.7                 52 200¶
+  Screening/vaccine                Conventional            21                3                 1165              25.9950                 92.2                 59 900
+  Screening/vaccine                Conventional            21                2                 1472              25.9975                 95.3                120 400
+  Screening/vaccine                Conventional            18                2                 1604              25.9982                 95.4                199 100
+  Screening/vaccine                Liquid-based            18                2                 2339              25.9998                 97.2                446 800
+  Screening/vaccine                Conventional            18                1                 2609              26.0003                 98.0                556 300
+  Screening/vaccine                Liquid-based            18                1                 4022              26.0008                 98.7              2 748 000
+
+   *Average per woman lifetime costs, quality-adjusted life expectancy, and reduction in lifetime risk of cervical cancer associated with the non-dominated cervical
+cancer control strategies for four hypothetical HPV16/18 vaccines that vary in efficacy from 70% to 100% are shown. Strategies shown reflect the non-dominated
+options among a total of 320 strategies evaluated (80 for each vaccine efficacy). Strategies that were dominated were either less effective and more costly (i.e.,
+strongly dominated) or more costly and less cost-effective (i.e., weakly dominated) than the strategies shown. Not shown are strategies that would reduce the lifetime
+risk of cervical cancer by less than 85% because these would imply less protection against cervical cancer than current cervical cancer screening practice. Costs have
+been rounded to the nearest whole dollar. QALY ⫽ quality-adjusted life year.
+   †The difference in cost divided by the difference in quality-adjusted life expectancy or life expectancy for each strategy compared with the next best strategy. All
+strategies are assumed to be equally available.
+   ‡The next best non-dominated comparator (data not shown) used to calculate the incremental cost-effectiveness ratio was conventional screening every 5 years
+starting at age 30 years without vaccination (total costs ⫽ $443; total QALYs ⫽ 25.9696).
+   §The next best non-dominated comparator (data not shown) used to calculate the incremental cost-effectiveness ratio was conventional screening every 5 years
+starting at age 25 years without vaccination (total costs ⫽ $526; total QALYs ⫽ 25.9765).
+   㛳The next best non-dominated comparator (data not shown) used to calculate the incremental cost-effectiveness ratio was conventional screening every 5 years
+starting at age 21 years without vaccination (total costs ⫽ $597; total QALYs ⫽ 25.9798).
+   ¶The next best non-dominated comparator (data not shown) used to calculate the incremental cost-effectiveness ratio was conventional screening every 3 years
+starting at age 21 years without vaccination (total costs ⫽ $845; total QALYs ⫽ 25.9891).
+
+
+
+because these strategies would imply less protection against                           age at which screening is begun. Provided that the vaccine is at
+cervical cancer than current cervical cancer screening practice.                       least 70% effective, vaccination at age 12 years combined with
+The reduction in lifetime risk of cervical cancer varies from 67%                      cytologic screening every 3 years beginning at age 25 years is
+to 99%, depending on vaccine efficacy, screening frequency, and                        more effective than our current screening program, provides a
+
+610 ARTICLES                                                                          Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004
+92% reduction in cervical cancer incidence, and costs approxi-
+mately $50 000 per quality-adjusted life year. As a general rule,
+with more effective vaccines, less frequent cytologic screening
+produced equivalent protection against cancer. For example,
+with a vaccine that prevents 100% of persistent HPV16/18
+infections, the same level of cancer protection may be obtained
+(92% reduction in lifetime cancer risk), but screening frequency
+may be decreased to every 5 years rather than every 3 years.
+
+
+
+
+                                                                                                                                                                Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+Other Sensitivity Analyses
+
+    Results were most sensitive to alternative assumptions about
+the 1) duration of vaccine efficacy; 2) proportion of persistent
+HPV in women older than 30 years attributable to newly ac-
+quired HPV infection versus reactivation of infection acquired in
+earlier adulthood; and 3) underlying frequency of cervical can-
+cer screening, age at which screening is initiated, and cost of
+following women with atypical cytologic screening results and
+low-grade lesions. Results were less sensitive to plausible
+changes in the natural history parameters, screening test char-
+acteristics, cervical cancer mortality, and costs.
+    Although the clinical benefits of vaccination diminish pro-
+portionally with decreasing vaccination coverage, the incremen-
+tal cost-effectiveness ratio of vaccination in the base case was
+not sensitive to plausible changes in vaccine costs because the
+unvaccinated proportion of the cohort did not accrue the costs of
+vaccination. In contrast, the cost-effectiveness of vaccination
+strategies improved as screening coverage decreased (i.e., as the
+proportion of the population never screened was increased). For
+example, the incremental cost-effectiveness ratio of adding a
+vaccine with 90% efficacy against persistent HPV infections to
+current screening practice in the United States is less than
+$25 000 per quality-adjusted life year. Adding this same vaccine
+to a hypothetical screening program in which all women comply
+with every scheduled screening session exceeds $50 000 per
+quality-adjusted life year.
+    In strategies that combined vaccination and screening, the
+choice of conventional versus liquid-based cytologic screening
+depends mainly on their relative costs and test characteristics.
+For example, when the cost of conventional cytologic screening
+is doubled, vaccination combined with liquid-based cytologic
+screening is preferred. When the sensitivity of conventional
+cytologic screening is reduced to less than 50%, liquid-based
+cytologic screening is preferred. Our cost-effectiveness results           Fig. 3. Sensitivity analysis of vaccination waning. The impact of waning (i.e.,
+                                                                           vaccine efficacy wanes after 5, 10, 15, or 20 years) on the effectiveness of a
+are stable over a wide plausible range of vaccination costs;               vaccine that prevents 90% of persistent human papillomavirus (HPV) 16/18
+however, when total per person vaccination costs (including                infections is shown. As the proportion of persistent HPV infection attributable to
+initial dose, office visits, counseling, and booster doses) exceed         new (versus latent or previously acquired) infections is varied from 75% (A), to
+$1000, strategies that combine vaccination with screening are              50% (B), and to 25% (C), the relative effect of waning is markedly attenuated.
+dominated by strategies that rely on screening alone. Results are
+sensitive to the costs (both monetary costs and decrements in              varied from 75% to 50% to 25%, the relative effect of waning is
+quality of life) associated with the workup of positive screening          markedly attenuated. When we evaluated the cost-effectiveness
+test results, including costs attributable to workup after false-          of different policies under these three assumptions, we found
+positive cytologic results, equivocal cytologic results, and LSIL          that a policy that combines vaccination and screening costs less
+results. The incremental cost-effectiveness ratios of vaccination          than $100 000 per quality-adjusted life year, provided that the
+strategies become more attractive as the costs and/or quality-of-          proportion of persistent HPV infections attributable to new (ver-
+life decrements attributable to screening increase.                        sus latent) infection was equal to or less than 75%.
+    We evaluated the impact of waning (i.e., vaccine efficacy
+wanes after 5, 10, 15, or 20 years) on the effectiveness of a              DISCUSSION
+vaccine that prevents 90% of persistent HPV16/18 infections
+(Fig. 3). As the proportion of persistent HPV infections attrib-              This analysis was motivated by the prospect that an HPV
+utable to new (versus latent or previously acquired) infections is         vaccine may be commercially available in the next several years
+
+Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004                                                                ARTICLES 611
+(10,11,98 –104). Our results indicate that the addition of an HPV      than 30 years. The relative value of vaccination-induced protec-
+16/18 vaccine to current cervical cancer screening in the United       tion against cervical cancer (compared with screening-induced
+States has the potential to be a cost-effective use of health care     protection against cervical cancer) was greater in the presence of
+resources. Our model, like other reports (105–107), predicts that      more aggressive strategies for low-grade lesions that are likely to
+a type-specific HPV vaccine will reduce, but not eliminate, the        regress without intervention when a substantial proportion of
+risk of cervical cancer. Moreover, because data on the long-term       high-risk women were not screened and when screening prac-
+effectiveness of vaccination, duration of immunity, and impact         tices were inefficient (e.g., annual cytologic screening). There is
+of type-specific vaccination on other HPV types will not be            a greater reduction in the projected age-specific prevalence of
+available for several decades, it is unlikely that serious consid-     HSIL than of LSIL because a greater proportion of overall LSIL
+
+
+
+
+                                                                                                                                                 Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+eration would be given to replacing organized screening pro-           is associated with non-16/18 HPV types compared with HSIL.
+grams with vaccination. However, it is plausible that a compre-        The implication of what will potentially be very minor reduc-
+hensive cervical cancer prevention program that includes both a        tions in LSIL within a screened community is that the economic
+primary prevention (vaccination) and secondary prevention              benefits of potentially averted procedures will only be realized in
+(screening) component could provide distinct advantages over           the context of altered practice patterns that permit LSIL to be
+the status quo. For example, it has been well documented that          less aggressively managed and screening to be conducted less
+screening is not equally accessible to all groups of women and         frequently.
+that most cases of invasive cervical cancer occur in women who             Assumptions about the relative proportion of persistent HPV
+have not been screened at regular intervals (108). In addition,        infections in women older than 30 years attributable to new
+previous cost-effectiveness analyses have consistently reported        exposure and acquisition of HPV, as opposed to reactivation of
+that annual cervical cytologic screening, compared with screen-        latent or previously acquired HPV, also have a major impact on
+ing every 2 or 3 years, results in very small gains in life            the projected clinical effects of waning of vaccine efficacy. At
+expectancy (e.g., hours) yet is accompanied by enormous incre-         one extreme, if the majority of cervical cancer in 50-year-old
+mental costs.                                                          women is a result of new HPV infections that are acquired after
+   Therefore, in our first analysis, we sought to estimate the         age 25 or 30 years, administering a vaccine to a 12-year-old girl
+costs and clinical benefits associated with the introduction of a      that wanes after 10 or 15 years will have a dramatically reduced
+type-specific HPV vaccine in the setting of current cervical           impact on the prevention of cervical cancer. At the other ex-
+cancer screening as practiced in the United States. If we con-         treme, if the majority of cervical cancers are caused by reacti-
+servatively assume that vaccination would not alter screening          vation of latent or previously acquired HPV, then an HPV16/18
+behavior, an HPV16/18 vaccine ranging in efficacy from 70% to          vaccine administered to a 12-year-old girl that is effective during
+100% would reduce the lifetime risk of cancer by 46%– 66%              the 10 –15 years that she is at the highest risk for incident HPV
+compared with current screening practices. Provided the vaccine        infections may still have a substantial effect on the risk of
+prevents at least 70% of persistent HPV16/18 infections, the           cervical cancer. We felt it prudent to present the projected
+incremental cost-effectiveness ratio of an HPV16/18 vaccine            cost-effectiveness results for both of these extreme assumptions.
+was well below $50 000 compared with that for current screen-          The need for better data to inform these assumptions is high-
+ing practices.                                                         lighted by the dramatic differences in the relative effects of
+   Recommendations for cervical cancer screening are likely to         waning as the proportion of persistent HPV infection attributable
+be modified in the next several years as enhanced cytologic            to new (versus latent or previously acquired) infections is varied.
+methods evolve, new technology is developed, and the ability to        Despite the uncertainty, we did find that, provided the proportion
+test for high-risk types of HPV DNA is refined (109 –111). In          of persistent HPV infection attributable to new (versus latent)
+this context, it is important to define the conditions under which     infections was equal to or less than 75%, a policy that combines
+combined vaccination and screening efforts may be cost-                vaccination and screening was still attractive.
+effective. In our second analysis, we thus explored the costs and          There are a number of limitations to this exploratory analysis.
+clinical benefits associated with a variety of hypothetical cervi-     First, if the proportion of cervical cancers caused by HPV16/18
+cal cancer control policies consisting of primary prevention with      is higher than we assumed in our base case, we may have
+vaccination and/or secondary prevention with screening. Our            underestimated the benefits of vaccination. Second, we did not
+general results indicated that strategies that combine vaccination     explicitly model the natural history of multiple HPV infections.
+with cytologic screening were more cost-effective than strate-         Therefore, vaccination against HPV16/18 in our model appeared
+gies relying only on cytologic screening. If one imposed a             to reduce the overall total number of HPV infections, although
+minimum threshold of clinical effectiveness (e.g., the reduction       the lifetime risk of non-16/18 HPV infections appeared to in-
+in cervical cancer risk over a woman’s lifetime must be at least       crease marginally because women effectively vaccinated against
+equivalent to or greater than that in our current screening pro-       HPV16/18 were then at risk for acquiring other HPV types. It
+gram), then the best balance between costs and benefits appeared       will be important to better elucidate the natural history of mul-
+to be triennial screening starting at age 25 years with vaccination    tiple infections, the effect on the natural history of other HPV
+at age 12 years. These general results supporting the cost-            types when vaccine targets are effectively eliminated, and
+effectiveness of a combined vaccination and screening program,         whether HPV DNA assays used for cervical cancer screening
+provided that screening may be initiated at a later age and            will need to be modified as a result of a vaccine program that
+conducted less frequently, are similar to those reported in a          alters the type-specific HPV prevalence over time. Third, we did
+recent analysis that used an independent model (107).                  not consider any potential cross-protection from other HPV
+   Results were sensitive to alternative assumptions about the         types; if this occurs, we may have underestimated the benefits of
+underlying patterns of cervical cancer screening, the duration of      vaccination. Fourth, we have implicitly assumed that the major-
+vaccine efficacy, and the natural history of HPV in women older        ity of persistent HPV infections in older women represent reac-
+
+612 ARTICLES                                                          Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004
+tivation of latent or previously acquired HPV. A better under-                    (11) Lowy DR, Frazer IH. Chapter 16: Prophylactic human papilllomavirus
+standing of what proportion of persistent HPV infections that                          vaccines. J Natl Cancer Inst Monogr 2003;(31):111– 6.
+                                                                                  (12) Halpern MT, Luce BR, Brown RE, Geneste B. Health and economic
+eventually lead to cancer are a result of reactivation of latent or
+                                                                                       outcomes modeling practices: a suggested framework. Value Health 1998;
+previously acquired HPV as opposed to new incident infections                          2:131– 47.
+acquired later in life will substantially affect the clinical and                 (13) Weinstein MC, Toy EL, Sandberg EA, Neumann PJ, Evans JS, Kuntz
+economic consequences of waning immunity in vaccinated                                 KM, et al. Modeling for health care and other policy decisions: uses, roles
+women. Fifth, our model cannot be used to assess the impact of                         and validity. Value Health 2001;4:348 – 61.
+HPV vaccination of both men and women on the dynamics of viral                    (14) Gold MR, Siegel JE, Russell LB, Weinstein MC, editors. Cost-
+transmission and will therefore underestimate the impact of                            effectiveness in health and medicine. New York (NY): Oxford University
+
+
+
+
+                                                                                                                                                                       Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+                                                                                       Press; 1996.
+factors such as herd immunity (105,112,113). Sixth, long-term
+                                                                                  (15) Goldie SJ, Grima D, Kohli M, Weinstein MC, Wright TC, Franco E. A
+vaccine efficacy is uncertain, and there are heterogeneities in                        comprehensive natural history model of HPV infection and cervical
+vaccine response that we did not include in the absence of                             cancer to estimate the clinical impact of a prophylactic HPV 16/18
+empiric data (114). Clinical trials may provide information on                         vaccine. Int J Cancer 2003;106:896 –904.
+some of these parameters, facilitating cost-effectiveness analy-                  (16) Kim JJ, Wright TC, Goldie SJ. Cost-effectiveness of alternative triage
+ses in the future. Finally, data are needed about patient and                          strategies for atypical squamous cells of undetermined significance.
+parent preferences, likelihood of vaccine acceptability, and be-                       JAMA 2002;287:2382–90.
+                                                                                  (17) Goldie SJ, Weinstein MC, Kuntz KM, Freedberg KA. The costs, clinical
+havioral response (e.g., screening behavior) to an intervention                        benefits, and cost-effectiveness of screening for cervical cancer in HIV-
+that is only partially protective against cervical cancer; we were                     infected women. Ann Intern Med 1999;130:97–107.
+unable to assess these issues in this analysis (115).                             (18) Goldie SJ, Kuhn L, Denny L, Pollack, Wright TC. Policy analysis of
+    Although a decision analytic approach using mathematical                           cervical cancer screening strategies in low-resource settings: clinical
+simulation modeling cannot replace clinical trial– based evalua-                       benefits and cost-effectiveness. JAMA 2001;285:3107–15.
+tion of vaccine efficacy, model-based analyses can provide qual-                  (19) Myers E, McCrory D, Nanda K, Matchar D. Mathematical model for the
+itative and quantitative insight into the relative importance of                       natural history of human papillomavirus infection and cervical carcino-
+                                                                                       genesis. Am J Epidemiol 2000;151:1158 –71.
+different parameters, can help to prioritize and to guide the                     (20) Mandelblatt J, Lawrence WF, Womack SM, Jacobson D, Yi B, Hwang
+design of future clinical studies, and can provide information on                      YT, et al. Benefits and costs of using HPV testing to screen for cervical
+the potential cost-effectiveness of different policy alternatives.                     cancer. JAMA 2002;287:2372– 81.
+Our analysis, intended to be an exploration of the potential                      (21) Wright TC, Ferenczy AF, Kurman RJ. Chapter 7: Precancerous lesions of
+cost-effectiveness of an HPV16/18 vaccine, suggests that a                             the cervix. In: Kurman RJ, editor. Blaustein’s pathology of the female
+prophylactic vaccine that prevents at least 70% of persistent                          genital tract. New York (NY): Springer-Verlag; 2002.
+                                                                                  (22) Pecorelli S, Benedet JL, Creasman WT, Shepherd JH. FIGO staging of
+HPV16/18 infections should substantially reduce HPV16/18-
+                                                                                       gynecologic cancer. 1994 –1997 FIGO Committee on Gynecologic On-
+associated SIL and cervical cancer, even in a setting of estab-                        cology. International Federation of Gynecology and Obstetrics. Int J
+lished cytologic screening. A combined program of vaccination                          Gynaecol Obstet 1999;65:243–9.
+and screening that permits a later age of screening initiation and                (23) Schlecht NF, Kulaga S, Robitaille J, Ferreira S, Santos M, Miyamura RA,
+a less frequent screening interval will likely be a cost-effective                     et al. Persistent human papillomavirus infection as a predictor of cervical
+use of limited health care resources.                                                  intraepithelial neoplasia. JAMA 2001;286:3106 –14.
+                                                                                  (24) Ferenczy A, Franco EL. Persistent human papillomavirus infection and
+REFERENCES                                                                             cervical neoplasia. Lancet Oncol 2002;3:11– 6.
+                                                                                  (25) Moscicki AB, Hills N, Shiboski S, Powell K, Jay N, Hanson E, et al. Risks
+  (1) Bosch FX, Lorincz A, Munoz N, Meijer CC, Shah KV. The causal                     for incident human papillomavirus infection and low-grade squamous
+      relationship between human papillomavirus and cervical cancer. J Clin            intraepithelial lesions development in young females. JAMA 2001;285:
+      Pathol 2002;55:244 – 65.                                                         2995–3002.
+  (2) Surveillance, Epidemiology, End Results (SEER) Cancer Statistics Re-        (26) Woodman CB, Collins S, Winter H, Bailey A, Ellis J, Prior P, et al.
+      view, 1973–1994. National Cancer Institute, Bethesda (MD). Available at:         Natural history of cervical human paillomavirus infection in young wom-
+      http://seer.cancer.gov/csr/1973_1994/. [Last accessed: March 4, 2004.]           en: a longitudinal cohort study. Lancet 2001;357:1831– 6.
+  (3) Miller AB. Failures of cervical cancer screening. Am J Public Health        (27) Wallin KL, Wiklund F, Angstrom T, Bergman F, Stendahl U, Wadell G,
+      1995;85:795.                                                                     et al. Type-specific persistence of human papillomavirus DNA before the
+  (4) Follen M, Richards-Kortum R. Emerging technologies and cervical can-             development of invasive cervical cancer. N Engl J Med 1999; 341:
+      cer. J Natl Cancer Inst 2000;92:363–5.                                           1633– 8.
+  (5) International Agency for Research on Cancer (IARC). IARC monographs         (28) Ho GY, Bierman R, Beardsley L, Chang CJ, Burk RD. Natural history of
+      on the evaluation of carcinogenic risks to humans. Vol. 64. Human                cervicovaginal papillomavirus infection in young women. N Engl J Med
+      papillomaviruses. Lyon (France): IARC; 1995.                                     1998;338:423– 8.
+  (6) Schiffman M. New epidemiology of human papillomavirus infection and         (29) Remmink AJ, Walboomers JM, Helmerhorst TJ, Voorhorst FJ, Rosendaal
+      cervical neoplasia. J Natl Cancer Inst 1995;87:1345–7.                           L, Risse EK, et al. The presence of persistent high-risk HPV genotypes in
+  (7) Franco EL, Rohan TE, Villa LL. Epidemiologic evidence and human                  dysplastic cervical lesions is associated with progressive disease: natural
+      papillomavirus infection as a necessary cause of cervical cancer. J Natl         history up to 36 months. Int J Cancer 1995;61:306 –11.
+      Cancer Inst 1999;91:506 –11.                                                (30) Rousseau MC, Pereira JS, Prado JC, Villa LL, Rohan TE, Franco EL.
+  (8) Walboomers J, Jacobs M, Manos M, Bosch FX, Kummer JA, Shah KV,                   Cervical coinfection with human papillomavirus (HPV) types as a pre-
+      et al. Human papillomavirus is a necessary cause of invasive cervical            dictor of acquisition and persistence of HPV infection. J Infect Dis
+      cancer worldwide. J Pathol 1999;189:12–9.                                        2001;184:1508 –17.
+  (9) Munoz N, Bosch FX, de Sanjose S, Herrero R, Castellsague X, Shah KV,        (31) Franco E, Villa L, Rohan T, Ferenczy A, Petzl-Erler M, Matlashewski G.
+      et al. Epidemiologic classification of human papillomavirus types associ-        Design and methods of the Ludwig-McGill longitudinal study of the natural
+      ated with cervical cancer. N Engl J Med 2003;348:518 –27.                        history of human papillomavirus infection and cervical neoplasia in Brazil.
+ (10) Koutsky LA, Ault K, Wheeler CM, Brown DR, Barr E, Alvarez FB, et al.             Ludwig-McGill Study Group. Rev Panam Salud Publica 1999;6:223–33.
+      A controlled trial of a human papillomavirus type 16 vaccine. N Engl        (32) Arias E. United States Life Tables, 2000. National vital statistics reports.
+      J Med 2002;347:1645–51.                                                          Vol 51. No. 3. Hyattsville (MD): National Center for Health Statistics; 2002.
+
+
+Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004                                                                       ARTICLES 613
+(33) Centers for Disease Control and Prevention. Behavioral Risk Factor               (54) Rozendaal L, Walboomers JM, van der Linden JC, Voorhorst FJ, Ken-
+     Surveillance System. Available at: http://www.cdc.gov/brfss/. [Last ac-               emans P, Helmerhorst TJ, et al. PCR-based high-risk HPV test in cervical
+     cessed; March 4, 2004.]                                                               cancer screening gives objective risk assessment of women with cytomor-
+(34) Ries LA, Eisner MP, Kosary CL, Hankey BF, Miller BA, Clegg L, et al.,                 phologically normal cervical smears. Int J Cancer 1996;68:766 –9.
+     editors. SEER Cancer Statistics Review, 1975-2000. Bethesda (MD):                (55) Ho G, Burk R, Klein S, Kadish AS, Chang CJ, Palan P, et al. Persistent
+     National Cancer Institute; 2003. Available at: http:seer.cancer.gov/csr/              genital human papillomavirus infection as a risk factor for persistent
+     1975_2000. [Last accessed: March 4, 2004.]                                            cervical dysplasia. J Natl Cancer Inst 1995;87:1365–71.
+(35) Brown AD, Garber AM. Cost-effectiveness of 3 methods to enhance the              (56) Koutsky LA, Holmes KK, Critchlow CW, Stevens CE, Paavonen J,
+     sensitivity of Papanicolaou testing. JAMA 1999;281:347–53.                            Bickmann AM, et al. A cohort study of the risk of cervical intraepithelial
+(36) van den Akker-van Marle ME, van Ballegooijen M, van Oortmarssen GJ,                   neoplasia grade 2 or 3 in relation to papillomavirus infection. N Engl
+
+
+
+
+                                                                                                                                                                          Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+     Boer R, Habbema JD. Cost-effectiveness of cervical cancer screening:                  J Med 1992;327:1272– 8.
+     comparison of screening policies. J Natl Cancer Inst 2002;94:193–204.            (57) Hopman EH, Rozendaal L, Voorhorst FJ, Walboomers JM, Kenemans P,
+(37) Hutchinson ML, Berger BM, Farber FL. Clinical and cost implications of                Helmerhorst TJ. High risk human papillomavirus in women with normal
+     new technologies for cervical cancer screening: the impact of test sensi-             cervical cytology prior to the development of abnormal cytology and
+     tivity. Am J Manag Care 2000;6:766 – 80.                                              colposcopy. BJOG 2000;107:600 – 4.
+(38) Cuzick J, Sasieni P, Davies P, Adams J, Normand C, Frater A, et al. A            (58) Ostor AG. Natural history of cervical intraepithelial neoplasia: a critical
+     systematic review of human papillomavirus testing within a cervical                   review. Int J Gynecol Pathol 1993;12:186 –92.
+     screening programme. Health Technol Assess 1999;3: i–iv, 1–196.                  (59) Melnikow J, Nuovo J, Willan AR, Chan BK, Howell LP. Natural history
+(39) Jenkins D, Sherlaw-Johnson C, Gallivan S. Can papilloma virus testing be              of cervical squamous intraepithelial lesions: a meta-analysis. Obstet Gy-
+     used to improve cervical cancer screening? Int J Cancer 1996;65:768 –73.              necol 1998;92(4 Pt 2):727–35.
+(40) Wright TC, Cox JT, Massad LS, Twiggs LB, Wilkinson EJ; ASCCP--                   (60) Holowaty P, Miller AB, Rohan T, To T. Natural history of dysplasia of the
+     Sponsored Consensus Conference. 2001 Consensus Guidelines for the                     uterine cervix. J Natl Cancer Inst 1999;91:252– 8.
+     management of women with cervical cytological abnormalities. JAMA                (61) Syrjanen K, Kataja V, Yliskoski M, Chang F, Syrjanen S, Saarikoski S.
+     2002;287:2120 –9.                                                                     Natural history of cervical human papillomavirus lesions does not sub-
+(41) Solomon D, Schiffman M, Tarrone R. Comparison of three management                     stantiate the biologic relevance of the Bethesda System. Obstet Gynecol
+     strategies for patients with atypical squamous cells of undetermined                  1992;79:675– 82.
+     significance: baseline results from a randomized trial. J Natl Cancer Inst       (62) Nasiell K, Roger V, Nasiell M. Behavior of mild cervical dysplasia during
+     2001;93:293–9.                                                                        long-term follow-up. Obstet Gynecol 1986;67:665–9.
+(42) Franco E, Villa L, Sobrinho J, Prado JM, Rousseau MC, Desy M, et al.             (63) Lawson HW, Lee NC, Thames SF, Henson R, Miller DS. Cervical cancer
+     Epidemiology of acquisition and clearance of cervical human papilloma-                screening among low-income women: results of a national screening
+     virus infection in women from a high-risk area for cervical cancer. J Infect          program, 1991–1995. Obstet Gynecol 1998;92:745–52.
+     Dis 1999;180:1415–23.                                                            (64) Mount SL, Papillo JL. A study of 10,296 pediatric and adolescent Papanico-
+(43) Hildesheim A, Schiffman MH, Gravitt PE, Glass AG, Greer CE, Zhang T,                  laou smear diagnoses in northern New England. Pediatrics 1999;103:539– 45.
+     et al. Persistence of type-specific human papillomavirus infection among         (65) Fonn S, Bloch B, Mabina M, Carpenter S, Cronje H, Maise C, et al.
+     cytologically normal women. J Infect Dis 1994;169:235– 40.                            Prevalence of pre-cancerous lesions and cervical cancer in South Africa--a
+(44) Sun XW, Kuhn L, Ellerbrock TV, Chiasson MA, Bush TJ, Wright TC Jr.                    multicentre study. S Afr Med J 2002;92:148 –56.
+     Human papillomavirus infection in women infected with the human                  (66) Schiffman MH, Bauer HM, Hoover RN, Glass AG, Cadell DM, Rush BB,
+     immunodeficiency virus. N Engl J Med 1997;337:1343–9.                                 et al. Epidemiologic evidence showing that human papillomavirus infec-
+(45) Moscicki AB, Shiboski S, Broering J, Powell K, Clayton L, Jay N, et al.               tion causes most cervical intraepithelial neoplasia. J Natl Cancer Inst
+     The natural history of human papillomavirus infection as measured by                  1993;85:958 – 64.
+     repeated DNA testing in adolescent and young women. J Pediatr 1998;              (67) Becker TM, Wheeler CM, McGough NS, Parmenter CA, Jordan SW,
+     132:277– 84.                                                                          Stidley CA, et al. Sexually transmitted diseases and other risk factors for
+(46) Kotloff KL, Wasserman SS, Russ K, Shapiro S, Daniel R, Brown W, et                    cervical dysplasia among southwestern Hispanic and non-Hispanic white
+     al. Detection of genital human papillomavirus and associated cytological              women. JAMA 1994;271:1181– 8.
+     abnormalities among college women. Sex Transm Dis 1998;25:243–50.                (68) Liaw K, Glas AG, Manos MM, Greer CE, Scott DR, Sherman M, et al.
+(47) Jacobs MV, Walboomers JM, Snijders PJ, Voorhorst FJ, Verheijen RH,                    Detection of human papillomavirus DNA in cytologically normal women
+     Fransen-Daalmeijer N, et al. Distribution of 37 mucosotropic HPV types                and subsequent cervical squamous intraepithelial lesions. J Natl Cancer
+     in women with cytologically normal cervical smears: the age-related                   Inst 1999;91:954 – 60.
+     patterns for high-risk and low-risk types. Int J Cancer 2000;87:221–7.           (69) Bauer HM, Ting Y, Greer CE, Chambers JC, Tashiro CJ, Chimera J, et al.
+(48) Burk RD, Kelly P, Feldman J, Bromberg J, Vermund SH, DeHovitz JA, et al.              Genital human papillomavirus infection in female university students as
+     Declining prevalence of cervicovaginal human papillomavirus infection with            determined by a PCR-based method. JAMA 1991;265:472–7.
+     age is independent of other risk factors. Sex Transm Dis 1996;23:333– 41.        (70) Ho GY, Kadish AS, Burk RD, Basu J, Palan PR, Mikhail M, et al. HPV
+(49) Bauer HM, Hildesheim A, Schiffman MH, Glass AG, Rush BB, Scott DR,                    16 and cigarette smoking as risk factors for high-grade cervical intra-
+     et al. Determinants of genital human papillomavirus infection in low-risk             epithelial neoplasia. Int J Cancer 1998;78:281–5.
+     women in Portland, Oregon. Sex Transm Dis 1993;20:274 – 8.                       (71) Schiff M, Becker TM, Masuk M, van Asselt-King L, Wheeler CM,
+(50) McCrory DC, Matchar DB, Bastain L, Datta S, Hasselblad V, Hickey J,                   Altobelli KK, et al. Risk factors for cervical intraepithelial neoplasia in
+     et al. Evaluation of cervical cytology. Evidence Report/Technology As-                southwestern American Indian women. Am J Epidemiol 2000;152:716–26.
+     sessment No. 5. AHCPR Publication No. 99-E010. Rockville (MD):                   (72) Pretorius R, Semrad N, Watring W, Fotheringham N. Presentation of
+     Agency for Health Care Policy and Research; February 1999.                            cervical cancer. Gynecol Oncol 1991;42:48 –53.
+(51) Nobbenhuis MA, Walboomers JM, Helmerhorst TJ, Rozendaal L, Rem-                  (73) Ferlay J, Bray F, Pisani P, Parkin DM. GLOBOCAN 2000: Cancer
+     mink AJ, Risse EK, et al. Relation of human papillomavirus status to                  Incidence, Mortality and Prevalence Worldwide, Version 1.0. IARC Can-
+     cervical lesions and consequences for cervical cancer screening: a pro-               cerBase No. 5. Lyon (France): IARC Press; 2001.
+     spective study. Lancet 1999;354:20 –5.                                           (74) Gustafsson L, Ponten J, Bergstrom R, Adami HO. International incidence
+(52) Ellerbrock TV, Chiasson MA, Bush TJ, Sun XW, Sawo D, Brudney K, et                    rates of invasive cervical cancer before cytological screening. Int J Cancer
+     al. Incidence of cervical squamous intraepithelial lesions in HIV-infected            1997;71:159 – 65.
+     women. JAMA 2000;283:1031–7.                                                     (75) Fidler HK, Boyes DA, Worth AJ. Cervical cancer detection in British
+(53) Londesborough P, Ho L, Terry G, Cuzick J, Wheeler C, Singer A. Human                  Columbia: a progress report. J Obstet Gynaecol Br Commonw 1968;75:
+     papillomavirus genotype as a predictor of persistence and development of              392– 404.
+     high-grade lesions in women with minor cervical abnormalities. Int J             (76) Bai H, Sung CJ, Steinhoff MM. ThinPrep Pap Test promotes detection of
+     Cancer 1996;69:364 – 8.                                                               glandular lesions of the endocervix. Diagn Cytopathol 2000;23:19 –22.
+
+
+614 ARTICLES                                                                        Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004
+ (77) Belinson J, Qiao YL, Pretorius R, Zhang WH, Elson P, Li L, et al. Shanxi           (98) Berry JM, Palefsky JM. A review of human papillomavirus vaccines:
+      Province Cervical Cancer Screening Study: a cross-sectional comparative                 from basic science to clinical trials. Front Biosci 2003;8:s333– 45.
+      trial of multiple techniques to detect cervical neoplasia [published erratum       (99) World Health Organization (WHO). Current status of development of
+      appears in Gynecol Oncol 2002;84:355]. Gynecol Oncol 2001;83:439– 44.                   prophylactic vaccines against human papillomavirus infection. Report of
+ (78) Petry KU, Menton S, Menton M, van Loenen-Frosch F, de Carvalho                          a technical meeting, Geneva, 16 –18 February 1999. Geneva (Switzer-
+      Gomes H, Holz B, et al. Inclusion of HPV-testing in routine cervical                    land): Department of Vaccines and other Biologicals, WHO, International
+      cancer screening for women above 29 years in Germany: results for 8466                  Agency for Research on Cancer. Available at: http://www.who.int/
+      patients. Br J Cancer 2003;88:1570 –7.                                                  vaccine_ research/documents/en/hpv1.pdf. [Last accessed: March 4, 2004.]
+ (79) Schiffman M, Herrero R, Hildesheim A, Sherman ME, Bratti M,                       (100) Lehtinen M, Dillner J. Preventative human papillomavirus vaccination.
+      Wacholder S, et al. HPV DNA testing in cervical cancer screening: results               Sex Transm Infect 2002;78:4 – 6.
+
+
+
+
+                                                                                                                                                                              Downloaded from https://academic.oup.com/jnci/article/96/8/604/2521208 by Universidade Federal de Mato Grosso (UFMT) user on 24 October 2025
+      from women in a high-risk province of Costa Rica. JAMA 2000;283:87–93.            (101) Lowy DR, Schiller JT. Papillomaviruses: prophylactic vaccine prospects.
+ (80) Schneider A, Hoyer H, Lotz B, Leistritza S, Kuhne-Heid R, Nindl I, et al.               Biochim Biophys Acta 1999;1423:M1– 8.
+      Screening for high-grade cervical intra-epithelial neoplasia and cancer by        (102) Lehtinen M, Paavonen J. Efficacy of preventative human papillomavirus
+      testing for high-risk HPV, routine cytology or colposcopy. Int J Cancer                 vaccination. Int J STD & AIDS 2001;12:771– 6.
+      2000;89:529 –34.                                                                  (103) Crum C. The beginning of the end for cervical cancer. N Engl J Med
+ (81) Wright TC Jr, Denny L, Kuhn L, Pollack A, Lorincz A. HPV DNA testing                    2002;347:1703– 4.
+      of self-collected vaginal samples compared with cytologic screening to            (104) Schiller JT, Hidesheim A. Developing HPV virus-like particle vaccines to
+      detect cervical cancer. JAMA 2000;283:81– 6.                                            prevent cervical cancer: a progress report. J Clin Virol 2000;19:67–74.
+ (82) Kulasingam SL, Hughes JP, Kiviat NB, Mao C, Weiss NS, Kuypers JM,                 (105) Hughes JP, Garnett GP, Koutsky L. The theoretical population-level
+      et al. Evaluation of human papillomavirus testing in primary screening for              impact of a prophylactic human papillomavirus vaccine. Epidemiology
+      cervical abnormalities: comparison of sensitivity, specificity, and fre-                2002;13:631–9.
+      quency of referral. JAMA 2002;288:1749 –57.                                       (106) Sanders GD, Taira AV. Cost-effectiveness of a potential vaccine for
+ (83) Diaz-Rosario LA, Kabawat SE. Performance of a fluid-based, thin-layer                   human papillomavirus. Emerg Infect Dis 2003;9:37– 48.
+                                                                                        (107) Kulasingham SL, Myers ER. Potential health and economic impact of
+      Papanicolaou smear method in the clinical setting of an independent
+                                                                                              adding a human papillomavirus vaccine to screening programs. JAMA
+      laboratory and an outpatient screening population in New England. Arch
+                                                                                              2003;290:781–9.
+      Pathol Lab Med 1999;123:817–21.
+                                                                                        (108) Miller BA, Kolonel LN, Bernstein L, Young JL, Swanson GM, West DW,
+ (84) Fahey MT, Irwig L, Macaskill P. Meta-analysis of Pap test accuracy.
+                                                                                              et al., editors. Racial/ethnic patterns of cancer in the United States 1988 –
+      Am J Epidemiol 1995;141:680 –9.
+                                                                                              1992. Bethesda (MD): National Institutes of Health; 1998. http://seer.
+ (85) Hutchinson ML, Zahniser DJ, Sherman ME, Herrero R, Alfaro M, Bratti
+                                                                                              cancer.gov/publications/ethnicity/. [Last accessed: March 17, 2004.]
+      MC, et al. Utility of liquid-based cytology for cervical carcinoma screen-
+                                                                                        (109) Saslow D, Runowicz CD, Solomon D, Moscicki AB, Smith RA, Eyre HJ,
+      ing: results of a population-based study conducted in a region of Costa
+                                                                                              et al. American Cancer Society guideline for the early detection of
+      Rica with a high incidence of cervical carcinoma. Cancer 1999;87:48 –55.
+                                                                                              cervical neoplasia and cancer. CA Cancer J Clin 2002;52:342– 62.
+ (86) Nanda K, McCrory DC, Myers ER, Bastain LA, Hasselblad V, Hickey JD,
+                                                                                        (110) Sherman ME, Lorincz AT, Scott DR, Wacholder S, Castle PE, Glass AG,
+      et al. Accuracy of the Papanicolaou test in screening for and follow-up of
+                                                                                              et al. Baseline cytology, human papillomavirus testing, and risk for cervical
+      cervical cytologic abnormalities: a systematic review. Ann Intern Med                   neoplasia: a 10-year cohort analysis. J Natl Cancer Inst 2003;95:46 –52.
+      2000;132:810 –9.                                                                  (111) Goldie SJ. Public health policy and cost-effectiveness analysis: mathe-
+ (87) Sulik SM, Kroeger K, Schultz JK, Brown JL, Becker LA, Grant WD. Are                     matical modeling of HPV and cervical cancer. J Natl Cancer Inst Monogr
+      fluid-based cytologies superior to the conventional Papanicolaou test? A                2003;31:102–10.
+      systematic review. J Fam Pract 2001;50:1040 – 6.                                  (112) Garnett G, Waddell H. Public health paradoxes and the epidemiology of
+ (88) Stratton K, Durch J, Lawrence R, eds. Vaccines for the 21st century a tool              human papillomavirus vaccination. J Clin Virol 2000;19:101–12.
+      for decisionmaking. Washington (DC): National Academy Press; 2000.                (113) Koopman JS. Modeling infection transmission--the pursuit of complexi-
+ (89) Krahn M, Guasparini R, Sherman M, Detsky A. Costs and cost-                             ties that matter. Epidemiology 2002;13:622– 4.
+      effectiveness of a universal, school-based hepatitis B vaccination pro-           (114) Halloran ME, Struchiner CJ, Longhini IM. Study designs for evaluating
+      gram. Am J Public Health 1998;88:1638 – 44.                                             different efficacy and effectiveness aspects of vaccines. Am J Epidemiol
+ (90) U.S. Bureau of Labor Statistics. Statistical Abstract of the United States.             1997;146:789 – 803.
+      Washington (DC): U.S. Government Printing Office; 2001; USDL 96–186.              (115) Edmunds WJ, Medley GF, Nokes DJ. Evaluating the cost-effectiveness of
+ (91) Helms LJ, Melnikow J. Determining costs of health care services for                     vaccination programmes: a dynamic perspective. Stat Med 1999;18:
+      cost-effectiveness analyses: the case of cervical cancer prevention and                 3263– 82.
+      treatment. Med Care 1999;37:652– 61.
+ (92) Centers for Medicare and Medicaid Services. National Physician Fee                NOTES
+      Schedule Relative Value File. Medicare Physician Fee Schedule. Avail-
+      able at: http://www.cms.hhs.gov/physicians/pfs/#2002. [Last accessed:                Editor’s note: Drs. S. J. Goldie, T. C. Wright, and M. C. Weinstein are
+      March 8, 2004.]                                                                   consultants in an ongoing research project with the manufacturers of an HPV
+ (93) 2001 Clinical Diagnostic Laboratory Fee Schedule. Public Use File                 vaccine, GlaxoSmithKline Biologicals, through a private contract research or-
+      (PUF). Available at: http://www.cms.hhs.gov/providers/pufdownload/                ganization, Innovus, Inc. Dr. E. Franco has, on occasion, served as a consultant
+      default.asp/. [Last accessed: March 17, 2004.]                                    to companies that are involved with HPV-related technologies, such as 3M
+ (94) Shireman TI, Tsevat J, Goldie SJ. Time costs associated with cervical             Pharmaceuticals, Digene, Inc., GlaxoSmithKline, and Roche Diagnostics. Dr.
+      cancer screening. Intl J Technol Assess Health Care 2001;17:146 –52.              F. X. Bosch is participating in a Merck Sharp & Dohme-sponsored vaccination trial.
+ (95) Statistical Abstract of the United States: Consumer Price Index-All Urban            Supported by funding from GlaxoSmithKline Biologicals, Rixensart, Bel-
+      Consumers. Washington (DC): 2001; National Center for Health Statis-              gium, and by Public Health Service grant R01-CA93435 (to S. J. Goldie) from
+      tics. Available at: http://stats.bls.gov/cpi/. [Last accessed: March 17, 2004.]   the National Cancer Institute, National Institutes of Health, Department of
+ (96) Wolfson MC. Health-adjusted life expectancy. Health Rep 1996;8:41– 6.             Health and Human Services. E. Franco is the recipient of a Distinguished
+ (97) Gold M, Franks P, McCoy K, Fryback D. Towards consistency in cost-                Scientist award from the Canadian Institutes of Health Research.
+      utility analyses: using national measures to create condition-specific val-          Manuscript received September 11, 2003; revised February 22, 2004; accepted
+      ues. Med Care 1998;36:778 –92.                                                    March 12, 2004.
+
+
+
+
+Journal of the National Cancer Institute, Vol. 96, No. 8, April 21, 2004                                                                              ARTICLES 615
+

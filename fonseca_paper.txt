@@ -1,0 +1,781 @@
+                                                r e v a s s o c m e d b r a s . 2 0 1 3;5 9(5):442–451
+
+
+
+
+                                                                 Revista da
+                              ASSOCIAÇÃO MÉDICA BRASILEIRA
+                                                             www.ramb.org.br
+
+
+
+Original article
+
+Cost-effectiveness of the vaccine against human
+papillomavirus in the Brazilian Amazon region夽
+
+Allex Jardim da Fonseca a,b,∗ , Luiz Carlos de Lima Ferreira a,c , Giacomo Balbinotto Neto b,d
+
+a Fundação de Medicina Tropical Dr. Heitor Vieira Dourado, Manaus, AM, Brazil
+b Post-Graduate Program in Economics, Universidade Federal do Rio Grande do Sul, Porto Alegre, RS, Brazil
+c Post-Graduate Program in Tropical Medicine, Universidade Estadual do Amazonas, Manaus, AM, Brazil
+d Instituto de Avaliação de Tecnologia em Saúde, Porto Alegre, RS, Brazil
+
+
+
+
+a r t i c l e       i n f o                    a b s t r a c t
+
+Article history:                               Objective: To assess the cost-utility of the human papillomavirus (HPV) vaccination on the
+Received 5 December 2012                       prevention of cervical cancer in the Brazilian Amazon region.
+Accepted 23 March 2013                         Methods: A Markov cohort model was developed to simulate the natural evolution of HPV and
+Available online 14 September 2013             its progress to cervical cancer, considering the current preventive programs and treatment
+                                               costs. The one-year transition probabilities were mainly based on empirical data of local
+Keywords:                                      and national studies. The model evaluated the addition of the vaccine to three cervical
+Cervical cancer                                cancer-screening scenarios (0, 3 or 10 exams throughout life).
+Cost-effectiveness                             Results: The scenario of three Pap tests resulted in satisfactory calibration (base case).
+Human papillomavirus                           The addition of HPV vaccination would reduce by 35% the incidence of cervical cancer
+Vaccine                                        (70% vaccination coverage). The incremental cost-effectiveness ratio was US$ 825 for each
+Brazil                                         quality-adjusted life year gained. The sensitivity analysis conﬁrms the robustness of this
+Amazon region                                  result, and duration of immunity was the parameter with greater variation in incremental
+                                               cost-effectiveness ratio.
+                                               Conclusion: Vaccination has a favorable proﬁle in terms of cost-utility, and its inclusion in the
+                                               immunization schedule would result in a substantial reduction in incidence and mortality
+                                               of invasive cervical cancer in the Brazilian Amazon region.
+                                                                   © 2013 Elsevier Editora Ltda. Este é um artigo Open Access sob a licença de CC BY-NC-ND
+
+
+                                               Custo-efetividade da vacina contra o papilomavírus humano na região
+                                               Amazônica brasileira
+
+                                               r e s u m o
+
+Palavras-chave:                                Objetivo: Avaliar a custo-efetividade da vacinação contra o papilomavírus humano (HPV) na
+Câncer de colo de útero                        prevenção do câncer de colo de útero na região Amazônica brasileira.
+Custo-efetividade                              Métodos: Um modelo de coorte Markov foi desenvolvido para simular a história natural do
+Papilomavírus humano                           HPV e seu progresso para câncer de colo de útero, considerando os atuais programas de
+
+ 夽
+   Study conducted at the Universidade Federal de Rio Grande do Sul, Porto Alegre, RS, Brazil, and at the Fundação de Medicina Tropical,
+Manaus, AM, Brazil.
+ ∗
+   Corresponding author.
+   E-mail addresses: allex.jardim@bol.com.br, sigilo.coreme@hotmail.com (A.J. Fonseca).
+0104-4230 © 2013 Elsevier Editora Ltda. Este é um artigo Open Access sob a licença de CC BY-NC-ND
+http://dx.doi.org/10.1016/j.ramb.2013.03.004
+                                          r e v a s s o c m e d b r a s . 2 0 1 3;5 9(5):442–451                                                 443
+
+
+Vacina                                     prevenção e os custos de tratamento. As probabilidades de um ano de transição foram
+Brasil                                     baseadas principalmente em dados empíricos de estudos locais e nacionais. O modelo
+Região amazônica                           avaliou a adição da vacina a três cenários de rastreio de câncer de colo de útero (0, 3 ou
+                                           10 exames ao longo da vida).
+                                           Resultados: O cenário de três exames de Papanicolau resultou em calibração satisfatória
+                                           (caso base). A adição de vacinação contra o HPV reduziria em 35% a incidência de câncer de
+                                           colo de útero (70% de cobertura de vacinação). A razão incremental de custo-efetividade foi
+                                           US$ 825 para cada ano de vida ajustado para qualidade ganho. A análise de sensibilidade
+                                           conﬁrma a robustez deste resultado, e a duração de imunidade foi o parâmetro com maior
+                                           variação na razão incremental de custo-efetividade.
+                                           Conclusão: A vacinação tem um perﬁl favorável em termos de custo-utilidade, e sua inclusão
+                                           no calendário de imunização resultaria em redução substancial de incidência e de mortali-
+                                           dade relacionadas ao câncer de colo de útero na região Amazônica brasileira.
+                                                                © 2013 Elsevier Editora Ltda. Este é um artigo Open Access sob a licença de CC BY-NC-ND
+
+
+
+
+                                                                          cost-effectiveness analyses play a key role in the evaluation
+Introduction                                                              and selection of strategies that should be implemented.
+                                                                              Until the present time, there have been limited data on the
+The implementation of screening programs for precursor
+                                                                          clinical and economic impacts of HPV vaccination in Brazil,
+lesions has reduced mortality due to cervical cancer (CC) in
+                                                                          particularly in the Amazon region, where screening programs
+developed countries in recent decades; however, infrastruc-
+                                                                          have historically not been able to overcome geographical iso-
+ture weaknesses and ﬁnancing difﬁculties for this strategy
+                                                                          lation and signiﬁcant cultural barriers, as in the case of native
+have limited CC control in developing countries.1,2
+                                                                          indigenous populations. The present study aimed to conduct
+   In Brazil, CC represents an important public health prob-
+                                                                          a cost-effectiveness and cost-utility analysis of HPV vaccina-
+lem. It is estimated that 22,000 new cases of CC will be
+                                                                          tion in the Brazilian Amazon region, an area with high CC
+diagnosed in 2013,3 corresponding to an incidence rate of
+                                                                          incidence.
+17.5 cases per 100,000 women and to a mortality rate of 10.2
+deaths per 100,000 women.2 In the Brazilian Amazon region,
+the problem is even more serious. Due to a low screening                  Methods
+coverage for CC in the target population (less than 25%), a
+high incidence of the disease has been registered in that                 Analytical decision model
+area (up to 46 cases/100,000 women), similar to the inci-
+dence rates in low-income countries, such as Uganda and                   A Markov cohort model was developed as a dynamic, closed,
+Mali.4                                                                    and deterministic decision analysis tool for the evaluation of
+   The ﬁnding that 70% of CC cases are caused by two                      cost-effectiveness and cost-utility in preventive vaccination
+viral serotypes motivated the establishment of preventive                 (Fig. 1), using the TreeAge software (2009 version) (TreeAge
+strategies based on vaccination against HPV.5 Currently, two              Software Inc. - Williamstown, MA, USA).
+vaccines are available against HPV serotypes 16 and 18.6–8 Vac-               The analysis was performed from the provider’s perspec-
+cines are recommended for girls before they engage in sexual              tive (Brazilian Uniﬁed Health System). The target population
+intercourse, and they appear to have a satisfactory effective-            was preteen girls (12 years of age), independent of previous
+ness. The quadrivalent vaccine induces antibodies of high                 sexual contact or HPV infection. The cohort time horizon
+efﬁcacy against HPV and sustains stable levels for at least ﬁve           was lifetime. The model simulated the natural course of HPV
+years, in addition to inducing robust immune memory, sug-                 infection until its progression to invasive cervical cancer, tak-
+gesting that immunity is enduring.9 Vaccine cross-immunity                ing into account the current prevention programs (Pap test)
+has also been documented, with a 40% reduced incidence of                 in Brazil. For each strategy (screening plus vaccination or
+pre-malignant cervical lesions induced by other oncogenic                 screening only), the model incorporated health state transi-
+HPV serotypes (serotypes 31 and 45).10                                    tion probabilities, and the target population was followed-up
+   Many questions have been raised about the role of vac-                 from adolescence until death in a hypothetical cohort.
+cination in CC preventive strategies, such as its clinical                    The model incorporated the transition probabilities of
+effectiveness, target population, and duration of immunity,               mutually exclusive health states that refer to one-year cycles.
+but the main concern addresses the economic implication                   The model simulated the transition probabilities for 70 years
+of the vaccine. Unfortunately, the real effects of HPV vacci-             from the age of vaccination (12 years of age). At each
+nation on the incidence and mortality rates of CC won’t be                transition, the model attributed the costs, quality of life,
+available for decades. In the absence of longitudinal clinical            and death expectation according to the individual’s health
+studies that evaluate all of these variables, economic mod-               condition. The transition probabilities were based on empiri-
+els of analytical health decisions can be useful tools for the            cal data from the medical literature and referred to transitions
+evaluation of preventive strategies, by transporting data from            from a healthy state to a possible HPV infection and low-
+empirical studies into real-world simulations, allowing for               grade squamous intraepithelial lesion (LSIL) induction, which
+the management of uncertainties and variations. Therefore,                could regress over time to normality, persist, or progress to
+444                                              r e v a s s o c m e d b r a s . 2 0 1 3;5 9(5):442–451
+
+
+
+No vaccine
+               M
+                   Vaccine                                                     Model parameters and presumption of base case
+
+                                                                               The cohort’s transition probabilities from a state of health to
+             Healthy               LSIL                   Death
+                                                                               another were established based on data from published stud-
+                                                                               ies. Data from studies that evaluated epidemiology of CC in
+                                   HSIL                                        the Brazilian population were preferably used to calibrate the
+                                                                               model, particularly when addressing the Brazilian Amazon
+                                                                               population. The supplementary data illustrate the values of
+                             Cervical cancer:
+                                                                               the base case, variations of the sensitivity analysis, and the
+                               Early stage
+                                                                               data source used in the model. The base case values represent
+                                                                               the best estimate for each variable.
+                             Cervical cancer:
+                             Regional stage                                       Where necessary, the model was calibrated by adjusting
+                                                                               the incidence of precursor lesions of CC to adequately simu-
+                                                                               late the results of cancer incidence as recorded in the Brazilian
+                             Metastatic cancer
+                                                                               Amazon region.
+
+Fig. 1 – Structure of the Markov decision model. The circle                    Precursor lesions
+above represents the decision of whether or not to
+vaccinate. The squares represent the states of health, and                     The likelihood of oncogenic HPV-induced precursor lesions
+the arrows represent the transition probabilities. Each                        was deﬁned in accordance with a Brazilian study that assessed
+individual is followed-up from 12 years of age until death.                    the incidence of squamous intraepithelial lesion in adoles-
+At each one-year cycle, the individuals are at risk                            cents who were followed up annually.13
+of developing precursor lesions, cancer, or death.                                For simpliﬁcation, LSIL was deﬁned as grade I lesions,
+                                                                               and HSIL was deﬁned as grade II and III lesions and in situ
+                                                                               carcinoma. The age of sexual initiation was assumed to be
+                                                                               13 years according to a local epidemiological study,4 and the
+high-grade squamous intraepithelial lesion (HSIL). This, in                    incidence of LSIL peaked one year after the initiation of sexual
+turn, could persist, regress to normality, or progress to local-               intercourse.
+ized, regional, or metastatic invasive cancer (Fig. 1). Given the                 Due to the paucity of epidemiological studies evaluat-
+development of cancer, each individual could continue to suf-                  ing progression probabilities and the regression of precursor
+fer from the disease, evolve to death, or evolve to a disease-free             lesions, this model used transition probabilities reported in
+state. Each year, individuals would be under an age-speciﬁc                    classic international studies adjusted for one year (one cycle),
+risk of death that is unrelated to cancer. The odds of death                   assuming that the mechanism of evolution of the disease is
+unrelated to cancer are based on the life expectancy and mor-                  universal.14,15 The probability of precursor lesion regression
+tality curves of Northern Brazil.11 The probability of death                   to normality was greater in younger women (< 30 years) com-
+unrelated to cancer was calculated through the following for-                  pared to those who were older than 30 years, reﬂecting more
+mula:                                                                          persistent infections in older women.16
+
+
+Probability of death (age) = 1 − [survival probability (age + 1)/              Cytological screening tests
+
+                                 survival probability (age)]                   The probability of detecting an asymptomatic cervical lesion
+                                                                               is a function of the percentage of women who undergo Pap
+                                                                               smear screening and the sensitivity and speciﬁcity of the test.
+    Due to the low coverage of typical preventive vaginal cyto-                Incremental evaluations of vaccinations of the population
+logical screening strategies of the Amazonian population, the                  were performed for a non-screening scenario and for scenar-
+model was evaluated in three independent scenarios of vacci-                   ios in which individuals were screened three and ten times
+nation or non-vaccination.4 The scenario with no cytological                   throughout their lifetimes.
+screening throughout life (natural history of HPV infection)                       In the scenario of three screening exams throughout an
+was compared with the scenarios for three and ten Pap                          individual’s lifetime, the individuals from the model were sub-
+smear exams throughout a woman’s life. At each screening                       jected to the Pap test randomly within the second, fourth, and
+event, cervical lesions would be found according to the crite-                 sixth decades of life. In the scenario of ten lifetime exams,
+ria (Pap test sensitivity and speciﬁcity) described by national                individuals were subjected to testing every ﬁve years from the
+studies. The detection of cervical lesions would require follow-               ages of 25 to 40, and then every three years until the age of
+up evaluations or treatment (colposcopy, cryosurgery, and/or                   55, with a ﬁnal exam at 65 years of age, in accordance with
+surgery), for which they have been assigned a likelihood of                    a Brazilian study that demonstrated that the frequency of
+success, costs, and implications for the quality of life                       preventive examinations tends to be higher between 40 and
+of the individuals of the cohort model. The economic analysis                  59 years of age and decreases after 60 years of age.16
+adopted a 5% annual discount rate for the cost and out-                            The sensitivity of the Pap test was estimated at 70% for
+come, with the intent to convert future values into present                    LSIL and 80% for HSIL. The speciﬁcity ranged from 80% to 90%,
+values.12                                                                      according to Brazilian studies.17–20
+                                            r e v a s s o c m e d b r a s . 2 0 1 3;5 9(5):442–451                                        445
+
+
+    The fundamental structure of the model is based on clini-               distinguish the effect of the bivalent from the quadrivalent
+cal practice consistent with the clinical program procedures                vaccine. The reduction in the incidence of CC-inducing lesions
+advocated by VIVA MULHER, a program from the Brazilian                      as a result of vaccination was based on studies that originally
+Ministry of Health.21 Abnormal screening examinations were                  reported the effectiveness of the vaccine.6–8
+forwarded to colposcopy, and tissues were evaluated by biopsy.                  The vaccination coverage was assumed at 90% of the target
+If HSIL was histologically conﬁrmed, then the patient would                 population, based on the results of a recently conducted vacci-
+be subjected to cryotherapy treatment or surgery. LSIL cases                nation campaigns against rubella in Brazil (in 2008 and 2011).25
+underwent new screening tests after six months.                             In this nationwide vaccination strategy held in a similar pop-
+    The costs related to each procedure were derived from the               ulation, the a 95% coverage was achieved among females aged
+funds allocation table of the Brazilian Ministry of Health.21,22            between 12 and 19 years. Whereas HPV vaccine requires three
+                                                                            applications (unlike rubella vaccine, which requires only one
+Invasive cervical cancer                                                    dose), the assumed coverage for this model was slightly lower
+                                                                            (90%).
+Given the progression to cervical invasive cancer, the proba-                   In the base case of this model, it was determined that the
+bilities of its detection in the asymptomatic, early, regional, or          vaccine provided immunity throughout life after three doses.
+metastatic stages were derived from a local epidemiological                 However, there are major concerns regarding the duration of
+study, as were the costs allocated to the initial treatment of              immunity, with signiﬁcant impact on the economic outcomes
+cancer.4 The tumor stages were simpliﬁed as localized can-                  of vaccination. Simulations on the need for booster doses to
+cer (FIGO stage I and IIA), regional cancer (FIGO IIB to IVA), or           maintain immunity (one to four doses throughout life) were
+metastatic cancer (FIGO IVB). The standardized treatment was                also performed. Booster vaccination required only one dose;
+surgery for localized cancer, chemotherapy combined with                    therefore, its cost was estimated at a third of the initial vacci-
+radiotherapy for regional cancer, and palliative chemotherapy               nation.
+for metastatic cancer.4                                                         There are no references for the price of the vaccine in Brazil
+    The probabilities of death by cancer at each stage were                 for the large-scale public sector, since the vaccine has not yet
+extracted from the global survival curves of longitudinal                   been incorporated into public health protocols. A study con-
+studies.23 The ﬁve-year survival rate ranged from 92.0% for                 duct by the Brazilian Ministry of Health estimated the price
+localized cancer to 55.7% for regional cancer and 16.5%                     of vaccination at approximately US$ 180 (US$ 57 for each
+for metastatic cancer. The annual incremental costs were esti-              dose + US$ 9 as cost of the applications).26 The Rotative Fund
+mated at 10% of the initial value of the cancer treatment                   (Pan-American Health Organization) for vaccine purchases
+and refer to screening examinations, control of sequelae, and               has been a technical cooperation mechanism for the expan-
+treatment-related toxicities or costs related to tumor recur-               sion of vaccination coverage.27 According to the Rotative Fund,
+rence. Only direct costs that were assigned to cancer were                  the cost of the vaccine dose to Brazil would be approximately
+computed, and were expressed in American dollars (US$).                     US$ 60 (US$ 17 for each dose + US$ 9 as cost of the appli-
+                                                                            cations). In the present model, the cost of initial vaccination
+Quality of life                                                             (three doses + implementation costs) for the base case was
+                                                                            estimated at US$150.
+Utility is a measure of the quality of life; it varies on a scale               However, it was reported that the average price of vaccina-
+from 0 to 1, where 0 represents death and 1 represents ideal                tion (three doses) in the American market is US$ 360.28 For the
+health. The model multiplies the years of life by the utility               public sector, the value negotiated by the Centers for Disease
+implicated in the health status to adjust survival by quality of            Control and Prevention in the United States was US$ 290.29
+life; the ﬁnal outcome of effectiveness is quality-adjusted life
+years (QALYs). The supplementary data illustrate these values.              Measurement of outcomes
+    The completion of the Pap test implied a slight decrease
+in the quality of life during the year of examination (0.99),               The results of the effectiveness were shown as the num-
+as did colposcopy examinations and conization (0.95). Can-                  ber of cancer cases prevented and deaths avoided, and the
+cer precursor lesions of the uterine cervix were considered                 utility outcomes were shown as QALYs. The incremental cost-
+asymptomatic and caused no reduction in quality of life.                    effectiveness ratio (ICER) was calculated by the ratio of the
+The quality of life (utility) related to each tumor stage was               difference in the cumulative total costs divided by the total
+based on an international study that speciﬁcally addressed                  QALYs obtained per woman that are attributed to the addition
+this topic using a validated analog scale, and ranged from 0.48             of vaccination to the existing screening program. As a thresh-
+(metastatic cancer) to 0.76 (localized cancer).24 The use of util-          old for judgment, the international convention that a strategy
+ity parameters from international studies as a reference in the             can be considered cost beneﬁcial if the ICER is less than the
+present model can be explained by the absence of Brazilian                  value of GDP per capita (i.e., if the additional cost of a strategy
+studies addressing this issue, but may be supported by the                  is less than the value of GDP per capita to save a QALY) was
+concept of universality of human suffering.24                               followed.30,31
+
+Vaccination characteristics                                                 Sensitivity analysis
+
+The goal of this model is to evaluate the impact of the vaccine             All economic assessments show a certain degree of
+on the incidence of CC exclusively. It was not developed to                 uncertainty, inaccuracy, or methodological controversy.12,31
+446                                                   r e v a s s o c m e d b r a s . 2 0 1 3;5 9(5):442–451
+
+
+
+
+ Table 1 – Health and economic outcomes for the addition of vaccination to the screening strategy (Pap test).
+ Preventive strategies                    Cost per individual         Quality-adjusted life                                    Incremental              QALYs saved                 ICER (US$/QALY)
+                                          (US$)                       years (QALYs)                                            cost (US$)               per individual
+
+ Non-screening scenario
+  Vaccination                             270                         24.8                                                     -25                      0.2                         Dominant
+  No vaccination (natural course)         295                         24.6
+
+ Scenario of three screenings throughout the lifetime (base case)
+   Vaccination + screening                320                         29.6                                                     165                      0.2                         825
+   Only screening                         155                         29.4
+
+ Scenario of ten screenings throughout the lifetime
+   Vaccination + screening                448                         34.5                                                     255                      0.2                         1,275
+   Only screening                         193                         34.3
+
+
+Therefore, sensitivity analyses (one-way) were performed for                           This assessment can be compared to the addition of the
+variables with uncertainty over the base case values to assess                      vaccine in other hypothetical scenarios of baseline cytological
+the robustness of the present study ﬁndings. These analy-                           screening in Table 1.
+ses recalculate the ICER considering the variations in a given                         Fig. 2 compares the reduction in the incidence of CC for
+parameter.                                                                          the various strategies (combination of cytological screening
+   The evaluated variables were cost of vaccination, effec-                         and vaccination), given the different vaccine coverage levels
+tiveness of vaccination, scenario of the pre-existing screening                     simulated by this model. It is noteworthy that the goal of a
+program, vaccination coverage, time of immunity, annual dis-                        50% reduction in CC incidence could be achieved by combin-
+count rate, and characteristics of the Pap test (sensitivity).                      ing high vaccination coverage (> 70%) with existing screening
+For such analyses, the variation values represent the authors’                      procedures (> 3 Pap tests during lifetime).
+judgment regarding the uncertainty of the study parameter or
+the variations in the results that have been published in the                       Simulation of uncertainties
+medical literature.
+                                                                                    The sensitivity analyses reveal that vaccination tends to
+                                                                                    provide a favorable proﬁle regarding cost-effectiveness,
+Results                                                                             despite changes in the base case parameters proposed by the
+                                                                                    sensitivity analysis (Fig. 3).
+Model calibration                                                                      The population vaccination coverage implies wide varia-
+                                                                                    tions in ICER, surpassing US$ 2,000/QALY for vaccine coverage
+The primary outcome for the calibration of the model was the                        levels of less than 50%. In a vaccination coverage of 100%, the
+incidence of invasive cancer. In the scenario of the natural                        ICER would be approximately US$ 500/QALY. The vaccination
+course of HPV infection, without screening exams, the model                         strategy tends to dominate the cytological screening (3x) in
+simulated a 4.2% lifetime risk of cancer, which equates to 34.1                     isolation, i.e., it is less costly and more effective (ICER ≤ 0)
+invasive CC cases per 100,000 women, considering the demo-                          for vaccination costs lower than US$ 40 (all doses for primary
+graphic structure of the region studied.11 In the scenario with                     immunization). For vaccination costs above US$ 500, the vac-
+screening three times throughout an individual’s lifetime, the                      cination strategy requires approximately US$ 2,200 to save one
+risk of cancer was estimated at 3.4% (equivalent to 27.5 cases                      QALY. A vaccination effectiveness (reduction in the incidence
+per 100,000 women).
+   The model was well-calibrated to reported data of inci-                                                          80
+dence of CC in the Brazilian Amazon. The prediction in the                                                          70
+                                                                                    Reduction in CC incidence (%)
+
+
+
+
+three-screenings scenario corresponded satisfactorily to
+                                                                                                                    60
+the gross incidence rate of invasive CC as recorded in the
+                                                                                                                    50
+Brazilian Amazon region in 2010 (28.2 cases per 100,000
+women), and was considered as the baseline strategy to be                                                           40
+
+compared with the addition of vaccination.4                                                                         30
+
+                                                                                                                    20
+
+Base case analysis                                                                                                  10
+
+                                                                                                                     0
+                                                                                                                                               Vaccination only                          Vacc. + Screening 10x
+With a vaccination coverage rate of 90%, the vaccination strat-                                                          Screening only                           Vacc. + Screening 3x
+
+egy for preteen girls of the Brazilian Amazon region would                                                                           Vacc. coverage 50%           Vacc. coverage 100%
+reduce the lifelong incidence of CC by 42% in this population,                                                                       Vacc. coverage 70%           Pap smear 3x in life
+and would reduce the mortality due to CC by approximately                                                                            Pap smear 10x in life
+43.4%. The addition of the vaccine would generate an incre-
+mental cost of approximately US$ 165 per woman to the                               Fig. 2 – Effectiveness of strategies in the prevention of
+current strategy. The incremental cost-effectiveness ratio was                      cervical cancer. Additional effect of vaccination in different
+US$ 825/QALY saved, given the base case parameters.                                 vaccine coverage levels and preventive strategies.
+                                                                                   r e v a s s o c m e d b r a s . 2 0 1 3;5 9(5):442–451                                                                            447
+
+
+                                         A                                                                                                  B
+
+
+
+
+                                                                                                                        Incremental cost-effectiveness
+                                                        4000                                                                                             3000
+
+
+
+
+                       Incremental cost-effectiveness
+                                                        3500                                                                                             2500
+
+
+
+
+                                                                                                                              ratio (US$/QALY)
+                             ratio (US$/QALY)
+                                                        3000
+                                                                                                                                                         2000
+                                                        2500
+                                                        2000                                                                                             1500
+                                                        1500                                                                                             1000
+                                                        1000
+                                                                                                                                                          500
+                                                         500
+                                                           0                                                                                               0
+                                                               30    40       50      60       70   80       90   100                                           0    100      200        300        400        500
+                                         C                                    Vaccine coverage (%)                                          D                         Cost of vaccination (US$)
+
+
+
+
+                                                                                                                        Incremental cost-effectiveness
+                       Incremental cost-effectiveness
+
+
+
+
+                                                        4500                                                                                             2000
+                                                        4000
+
+
+
+
+                                                                                                                              ratio (US$/QALY)
+                             ratio (US$/QALY)
+
+
+
+
+                                                        3500                                                                                             1500
+                                                        3000
+                                                        2500
+                                                                                                                                                         1000
+                                                        2000
+                                                        1500
+                                                        1000                                                                                              500
+                                                         500
+                                                           0                                                                                               0
+                                                               0          2          4          6            8    10                                            25    35         45            55         65
+                                                                          Annual discount rate (%)                                                                         Vaccine efficacy (%)
+                                         E                                                                                                  F
+                                                                                                                        Incremental cost-effectiveness   1000
+                       Incremental cost-effectiveness
+
+
+
+
+                                                        4000
+                                                        3500
+                                                                                                                                                          800
+                                                                                                                              ratio (US$/QALY)
+                             ratio (US$/QALY)
+
+
+
+
+                                                        3000
+                                                        2500                                                                                              600
+                                                        2000
+                                                                                                                                                          400
+                                                        1500
+                                                        1000
+                                                                                                                                                          200
+                                                         500
+                                                           0                                                                                               0
+                                                               0              1            2             3         4                                            50     60           70              80          90
+                                                                    Number of booster shoots needed                                                                    Pap test sensibility (%)
+                                                                               (life long)
+
+Fig. 3 – Sensitivity analysis. (A) Variation in vaccination coverage (30% to 100%); (B) variation in vaccination cost (US$ 15
+to US$ 500); (C) annual discount rate variation (0% to 10%); (D) variation in vaccine effectiveness in reducing the incidence
+of pre-malignant lesions (25% to 70%); (E) variation in the number of lifetime booster shots (1-4 booster shots); (F) variation
+in the sensitivity of the Pap test (50% to 90%).
+
+
+of precursor lesions) of above 40% maintains the ICER below
+US$1,000/QALY compared to the basal strategy. Increases in
+                                                                                                                                   Discussion
+the sensitivity of the Pap test tend to modestly increase the
+ICER of added vaccination by improving the efﬁciency of the                                                                        Due to increasing healthcare costs worldwide and the growing
+baseline strategy, leading to a relative reduction in the addi-                                                                    constraints arising from the scarcity of resources, healthcare
+tional beneﬁt of the vaccine.                                                                                                      demands have increasingly sought to justify the incorpora-
+   If revaccination is needed (at least one lifetime booster                                                                       tion of a new technique based on its cost-effectiveness or
+dose) for the maintenance of immunity, the ICER would be                                                                           cost-utility. To address this growing demand over the past
+US$ 1,650/QALY for the vaccination strategy, considering the                                                                       few decades, methodological tools that promote rationality
+cost of the vaccine booster at US$ 50 per dose. The need of                                                                        in decision-making in healthcare were proposed, aiming to
+extra doses substantially raises the costs of vaccine strat-                                                                       achieve efﬁcient use of available resources.
+egy without improving clinical effects, negatively altering                                                                           The present study revealed that the addition of HPV vacci-
+the cost-effectiveness proﬁle of vaccination. In the case of                                                                       nation to the existing preventive strategy exhibits a favorable
+the need for three booster doses, the ICER would reach US$                                                                         cost-effectiveness and cost-utility proﬁle in the Brazilian Ama-
+3,200/QALY. The ICER would surpass US$ 4,000/QALY for the                                                                          zon region. Even when simulating a pessimistic vaccination
+hypothesis of a booster dose every 10 years (four booster doses                                                                    coverage rate (approximately 30%), the ICER of the addition of
+throughout life).                                                                                                                  vaccination does not exceed the conventional limit of the GDP
+   The parameter variation with the greatest impact in the                                                                         value per capita (about US$ 12,000 for Brazil in 2012) for any
+ICER was the annual discount rate. In an analysis without a                                                                        other uncertainty simulation. The ICER values resulting from
+discount rate, the ICER would be approximately US$ 30/QALY,                                                                        the sensitivity analysis conﬁrms the favorable proﬁle of vacci-
+which is substantially less than a discount rate of 10% (ICER =                                                                    nation even if the limit value used were the GDP per capita in
+US$ 4,500/QALY). These results are consistent with a lifetime                                                                      the Amazon region (US$ 6,350 per capita). If the cost of vacci-
+horizon cohort, as proposed in the present study.                                                                                  nation is reduced to US$ 40 or less, with a vaccination coverage
+448                                          r e v a s s o c m e d b r a s . 2 0 1 3;5 9(5):442–451
+
+
+
+rate of 90%, then adding vaccination tends to dominate the                 acceptance. The cultural acceptance of the vaccine has not
+cytological screening strategy used alone.                                 been evaluated in Brazil. It is worth noting that the general
+    Some authors have proposed a different limit parameter                 public and health managers’ knowledge of HPV and its impli-
+for developing countries, suggesting that an expense of one to             cations are factors that strongly inﬂuence the acceptance of
+three times the value of GDP per capita for each QALY saved                the vaccine by a population. Accordingly, strategies of commu-
+would represent a good use of resources in these countries.30              nication and education regarding the subject would be crucial
+Although there is no consensus in Brazil regarding the limit for           to the success and effectiveness of any public health policy
+a strategy to be considered cost-effective, the present study              for the introduction of the HPV vaccine in Brazil, particularly
+conﬁrms the favorable proﬁle of the addition of HPV vacci-                 in the Amazon region.
+nation in Brazilian regions with poor prevention programs                      There are limitations to the present study. First, due to lack
+and a high incidence of CC according to the proposed crite-                of national data, some parameters have been calibrated based
+ria.                                                                       on international data. Second, the Markov assumption itself
+    To better understand the implications of the HPV vac-                  establishes that transition probabilities depend exclusively on
+cine, cost-effectiveness analyses published in countries facing            the current health state, not on a sequence of past health
+opposing economic situations can be enlightening. Goldie                   states. Indeed, dynamic transmission models represent an
+et al. studied the cost-effectiveness of the HPV vaccine in                economic evaluation methodology that uses probabilistic vari-
+72 low-income countries, mostly countries in Africa, which                 ations to more reliably simulate the natural course of diseases
+are characterized by high CC incidence rates.32 The analysis               such as CC, but requires large and robust epidemiological
+showed that the ICER of adding vaccinations in these countries             data for its preparation (not commonly available). Finally, the
+did not surpass US$ 200/QALY in 59 of the 72 countries, but had            present study considered only the effects of the vaccine on
+a major impact on the reductions in mortality and incidence                the magnitude of CC, without considering the effects of the
+rates of CC after the vaccination of preteens. The analysis                vaccine in reducing other types of cancer, such as those of the
+also showed the favorable cost-effectiveness proﬁle of the vac-            vulva, vagina, anus, or head and neck, nor the beneﬁts of the
+cine in regions where CC was not controlled by conventional                quadrivalent vaccine on genital warts.
+screening programs.                                                            A recent study evaluated the cost-effectiveness of the
+    Conversely, in developed countries that succeeded in                   quadrivalent HPV vaccine in Brazil, using a dynamic transmis-
+controlling CC incidence and CC-related mortality with                     sion model to assess the effects on CC and genital warts.40
+solid gynecological screening programs, the HPV vaccine is                 Kawai et al. estimated that the ICER of vaccination strat-
+not as favorable from a cost-effectiveness standpoint Ire-                 egy varied from US$ 448 to US$ 698/QALY when considering
+land, the United Kingdom, Switzerland, and Finland have                    only the bivalent vaccine (16 and 18) for control of the CC.
+gross incidence rates under 10 cervical cancer cases per                   The study also reported an even better outcome when con-
+100,000 women. In these countries, cost-effectiveness stud-                sidering the effect of the quadrivalent vaccine to control
+ies showed an additional cost of over US$ 20,000/QALY.33–36                CC and genital warts (US$ 219 to US$ 450/QALY). This data
+In the United States, the ICER of adding vaccination exceeded              suggest that, if the additional beneﬁt of vaccine is con-
+US$ 43,000/QALY37 . In the Netherlands, the CC incidence rate              sidered, a more favorable cost-effectiveness proﬁle may be
+is less than six cases per 100,000 women; however, the ICER                achieved.
+of adding the HPV vaccine to the existing Dutch preventive                     The HPV vaccine may also be effective in preventing
+program was greater than US$ 70,000/QALY, classifying the                  male cancers (such as those of the penis and anus). Addi-
+vaccination strategy, according to the authors, as non-cost-               tionally, male vaccination may improve the protection of
+effective.38                                                               women by reducing viral transmission. The cost-effectiveness
+    These evidences suggest that the greatest beneﬁt of the                of including Brazilian boys in HPV vaccination was studied
+vaccine does not lie in its synergy with the basal population              by Kim et al.41 This strategy rendered a small additional
+screening programs, rather in their replacement in countries               gain in clinical beneﬁt (around 4% reduction in risk of HPV-
+or regions whose programs are insufﬁcient and poorly struc-                related cancer), but a high additional cost. The authors judged
+tured, and have a high prevalence of oncogenic HPV infection.              vaccinating boys as non-cost-effective and recommended that
+    Despite the favorable economic proﬁle, the costs involved              efforts should be focused on expanding the coverage of girls
+in the vaccination of preteen girls have caused widespread                 only.
+concern, especially in developing countries. The HPV vaccine                   The high risk of invasive CC in the Brazilian Amazon region
+(16 and 18) is one of the most expensive vaccines on the                   implies an urgent need to rethink the current preventive pol-
+market, hindering its incorporation in the healthcare systems              icy, especially for underprivileged regions of the country. The
+of countries that would most beneﬁt from this technology.                  present study was the ﬁrst cost-effectiveness analysis of a
+According to the lesson learned from the vaccine against hep-              CC preventive strategy directed toward a speciﬁc region of
+atitis B, which is now available for children in 89% of the                the country. The cost-effectiveness analysis of HPV vaccine
+world’s countries, including the poorest countries, only after             for the Amazon region showed a better proﬁle when com-
+a drastic reduction in its price was vaccination in global pro-            pared to studies addressing this topic to Brazil as a whole,
+portions possible.39                                                       as in the analysis published by Colantônio et al. (ICER = US$
+    Although the cost of the vaccine is the main barrier                   10,181/QALY)42 and by Goldie et al. (ICER = US$ 9,600/QALY).43
+to its introduction in Latin America, other factors are also               Regarding public health, these results lead to the conclusion
+important, such as the feasibility of vaccinating the tar-                 that public policies on women’s health, particularly on CC
+get population, the competition with other vaccines, and its               prevention programs, should be decentralized (adjusted to
+                                           r e v a s s o c m e d b r a s . 2 0 1 3;5 9(5):442–451                                         449
+
+
+regional reality) rather than uniform, given the heterogene-
+ity inherent in a country of continental proportions, such as
+                                                                           Conﬂicts of interest
+Brazil.
+                                                                           The authors declare no conﬂicts of interest.
+    Large-scale preteen vaccination in the Brazilian Amazon
+region can be considered an investment in the future to
+prevent, in the coming decades, the premature deaths of                    Appendix A.
+hundreds of women who have historically been neglected in
+preventive government programs.                                            Model parameters, costs, utilities, variation for the sensitivity
+                                                                           analysis, and respective sources
+
+
+Variables                                                                  Base case                 Variation§              Data source
+                                                                                                                             (reference)
+
+Properties of vaccination
+  Vaccination coverage – three doses (%)                                   90                        30-100                  25
+
+  Vaccination age (years)                                                  12                                                4,13
+
+  Duration of immunity (years)                                             lifetime                  10-lifetime             9
+
+  Adherence to booster vaccination (%)                                     90                                                25
+
+
+Preventive screening properties
+  Number of tests during the lifetime (n)                                  3                         0-10                    4
+
+  Age screening started (years)                                            18                                                estimated
+  Sensitivity of Pap test (in LSIL scenario) (%)                           70                        50-90                   17,18
+
+  Sensitivity of Pap test (in HSIL scenario) (%)                           80                        60-90                   19,20
+
+  Speciﬁcity of Pap test (%)                                               90                                                17,18
+
+
+Transition probabilities
+  Develop LSIL after ﬁrst sexual intercourse                                                                                 13
+
+    1st year                                                               0.285                                             4,13
+
+    2nd year                                                               0.117                                             4,13
+
+    3rd year                                                               0.114                                             4,13
+
+    4th year                                                               0.075                                             4,13
+
+    5th to 25th year (mean)                                                0.070 (± 0.022)                                   4,13
+
+    26th to 50th year (mean)                                               0.053 (± 0.012)                                   4,13
+
+    After 51st year (mean)                                                 0.010 (± 0.008)                                   4,13
+
+  Reduction in the probabilities of developing LSIL                        50                        40-70                   6,7,8
+
+  attributed to vaccination (%)
+    LSIL regression (< 30 years old)                                       0.193                                             14, 15, 16
+
+    LSIL regression (> 30 years old)                                       0.113                                             14, 15, 16
+
+Develop HSIL from LSIL                                                     0.110                                             14, 15
+
+  Develop invasive cancer from LSIL                                        0.00075                                           14, 15
+
+  Regression of HSIL                                                       0.175                                             14, 15
+
+  Develop invasive cancer from HSIL                                        0.0078                                            14, 15
+
+
+Invasive cervical cancer properties
+  Probability of localized cancer at diagnosis                             0.315                                             4
+
+  Probability of regional cancer at diagnosis                              0.488                                             4
+
+  Probability of metastatic cancer at diagnosis                            0.197                                             4
+
+  Probability of death – localized                                         0.0165                                            23
+
+  Probability of death – regional                                          0.1101                                            23
+
+  Probability of death – metastatic                                        0.305                                             23
+
+Precursor lesions treatment properties
+  Effectiveness of cryosurgery for LSIL (%)                                85
+  Effectiveness of cryosurgery for HSIL (%)                                75
+  Eligibility for cryosurgery (%)                                          85                                                estimated
+450                                               r e v a s s o c m e d b r a s . 2 0 1 3;5 9(5):442–451
+
+
+
+Appendix A (Continued )
+
+
+Variables                                                                         Base case                Variation§               Data source
+                                                                                                                                    (reference)
+
+Others
+Duration of cycle (years)                                                         1                                                 estimated
+Age of sexual initiation (years)                                                  13                                                4
+
+Discount rate (%)                                                                 5                        0-10                     12, 31
+
+Costs (US$)
+  Vaccination – three doses                                                       150                      15 - 500                 26, 27, 28, 29
+
+  Booster shot                                                                    50                                                26, 27
+
+  Pap test                                                                        8                                                 22
+
+  Medical appointment                                                             5.5                                               22
+
+  Colposcopy                                                                      26.8                                              22
+
+  Cryosurgery                                                                     26.8                                              22
+
+  Conization                                                                      498                                               22
+
+  Hysterectomy type 1                                                             1,236                                             22
+
+  Localized invasive cancer treatment                                             3,702                                             4
+
+  Regional invasive cancer treatment                                              8,420                                             4
+
+  Metastatic cancer treatment                                                     2,625                                             4
+
+Utilities
+  Normal population                                                               1                                                 estimated
+  Completion of Pap test (for 1 year)                                             0.99                                              estimated
+  Colposcopy and conization (for 1 year)                                          0.95                                              estimated
+  Localized invasive cancer                                                       0.76                                              24
+
+  Regional invasive cancer                                                        0.67                                              24
+
+  Invasive metastatic cancer                                                      0.48                                              24
+
+
+§ Range of variation addressed in sensitivity analysis of variables where lies any uncertainty. Costs expressed in American dollars (US$).
+
+
+
+                                                                                   adenocarcinoma in situ: a combined analysis of four
+references
+                                                                                   randomised clinical trials. Lancet. 2007;369:1861–8.
+                                                                                9. Olsson SE, Villa LL, Costa RL, Petta CA, Andrade RP, Malm C,
+                                                                                   et al. Induction of immune memory following administration
+ 1. Zeferino LC, Derchain SF. Cervical cancer in the developing                    of a prophylactic quadrivalent human papillomavirus (HPV)
+    world. Best Pract Res Clin Obstet Gynaecol. 2006;20:339–54.                    types 6/11/16/18 L1 virus-like particle (VLP) vaccine. Vaccine.
+ 2. Kamangar F, Dores GM, Anderson WF. Patterns of cancer                          2007;25:4931–9.
+    incidence, mortality, and prevalence across ﬁve continents:                10. Brown DR, Kjaer SK, Sigurdsson K, Iversen OE,
+    deﬁning priorities to reduce cancer disparities in different                   Hernandez-Avila M, Wheeler CM, et al. The impact of
+    geographic regions of the world. J Clin Oncol. 2006;24:2137–50.                quadrivalent human papillomavirus (HPV; types 6, 11, 16, and
+ 3. Brasil. Ministério da Saúde. Instituto Nacional de Câncer.                     18) L1 virus-like particle vaccine on infection and disease due
+    Estimativa 2012: Incidência do câncer no Brasil. [cited 2012                   to oncogenic nonvaccine HPV types in generally HPV-naive
+    Jan 15]. Rio de Janeiro: INCA; 2009. Available from:                           women aged 16-26 years. J Infect Dis. 2009;199:926–35.
+    http://www.inca.gov.br/estimativa/2012/                                    11. Brasil. Instituto Brasileiro de Geograﬁa e Estatística (IBGE).
+ 4. Fonseca AJ, Ferreira LP, Dalla-Benetta AC, Roldan CN, Ferreira                 Tábua completa de mortalidade. Brasília (DF): IBGE; 2012.
+    MLS. Epidemiology and economic impact of cervical cancer in                    [cited 2012 Mar 13]. Available from: http://www.ibge.gov.br/
+    Roraima, a Northern state of Brazil: the public health system              12. Puig-Junoy J, Lopez-Valcarcel BG. Economic evaluations of
+    perspective. Rev Bras Ginecol Obstet. 2010;32:386–92.                          massive HPV vaccination: within-study and between study
+ 5. Clifford GM, Smith JS, Plummer M, Muñoz N, Franceschi S.                      variations in incremental cost per QALY gained. Prev Med.
+    Human papillomavirus types in invasive cervical cancer                         2009;48:444–8.
+    worldwide: a meta-analysis. Br J Cancer. 2003;88:63–73.                    13. Monteiro DLMM, Trajano AJB, Silva KS, Russomano FB.
+ 6. The FUTURE II Study Group. Quadrivalent vaccine against                        Incidence of cervical intraepithelial lesions in a population of
+    human papillomavirus to prevent high-grade cervical lesions.                   adolescents treated in public health services in Rio de Janeiro.
+    N Engl J Med. 2007;356:1915–27.                                                Brazil Cad Saúde Pública. 2009;25:1113–22.
+ 7. Harper DM, Franco EL, Wheeler CM, Moscicki AB,                             14. Melnikow J, Nuovo J, Willan AR, Chan BK, Howell LP. Natural
+    Romanowski B, Roteli-Martins CM, et al., HPV Vaccine Study                     history of cervical squamous intraepithelial lesions:
+    Group. Sustained efﬁcacy up to 4.5 years of a bivalent L1                      a meta-analysis. Obstet Gynecol. 1998;92:727–35.
+    virus-like particle vaccine against human papillomavirus                   15. Moscicki AB, Shiboski S, Broering J, Powell K, Clayton L, Jay N,
+    types 16 and 18: follow-up from a randomized control trial.                    et al. The natural history of human papillomavirus infection
+    Lancet. 2006;367:1247–55.                                                      as measured by repeated DNA testing in adolescent
+ 8. Ault KA, Future II Study Group. Effect of prophylactic human                   and young women. J Pediatr. 1998;132:277–84.
+    papillomavirus L1 virus-like-particle vaccine on risk of                   16. Rodriguez AC, Burk R, Herrero R, Hildesheim A, Bratti C,
+    cervical intraepithelial neoplasia grade 2, grade 3, and                       Sherman ME, et al. The natural history of human
+                                             r e v a s s o c m e d b r a s . 2 0 1 3;5 9(5):442–451                                       451
+
+
+    papillomavirus infection and cervical intraepithelial                    29. Centers for Disease Control and Prevention. CDC Vaccine
+    neoplasia among young women in the Guanacaste cohort                         Price List. [cited 2012Mar 12]. Available from:
+    shortly after initiation of sexual life. Sex Transm Dis.                     http://www.cdc.gov/vaccines/programs/vfc/cdc-
+    2007;34:494–502.                                                             vacpricelist.htm
+17. Girianelli VR, Thuler LC, Szklo M, Donato A, Zardo LMG.                  30. Eichler HG, Kong SX, Gerth WC, Mavros P, Jönsson B. Use
+    Comparação do desempenho do teste de captura híbrida II                     of cost-effectiveness analysis in health care resource
+    para HPV, citologia em meio líquido e citologia convencional                 decision-making: how are cost-effectiveness thresholds
+    na detecção precoce do câncer do colo do útero e de suas                    expected to emerge. Value Health. 2004;7:518–28.
+    lesões precursoras no Rio de Janeiro, Brasil. Rev Bras                   31. Devlin N, Parkin D. Does NICE have a cost-effectiveness
+    Cancerol. 2004;50:225–6.                                                     threshold and what other factors inﬂuence its decision.
+18. Santos ALF, Derchain SFM, Calvert EB, Martins MR.                            Health Econ. 2004;13:437–52.
+    Desempenho do exame colpocitológico com revisão por                      32. Goldie SJ, O’Shea M, Campos NG, Diaz M, Sweet S, Kim SY.
+    diferentes observadores e da captura híbrida II no diagnóstico               Health and economic outcomes of HPV 16,18 vaccination
+    da neoplasia intra-epitelial cervical graus 2 e 3. Cad Saúde                 in 72 GAVI-eligible countries. Vaccine. 2008;26:
+    Pública. 2003;19:1029–37.                                                    4080–93.
+19. Gontijo RC, Derchain SFM, Montemor EBL. Citologia oncótica,              33. Szucs TD, Largeron N, Dedes KJ, Raﬁa R, Bénard S.
+    captura de híbridos e inspeção visual de lesões cervicais. Cad              Cost-effectiveness analysis of adding a quadrivalent HPV
+    Saúde Pública. 2005;21:141–9.                                                vaccine to the cervical cancer screening programme in
+20. Tuon FFB, Bittencourt MS, Panichi MA, Pinto AP. Avaliação                   Switzerland. Curr Med Res Opin. 2008;24:1473–83.
+    da sensibilidade e especiﬁcidade dos exames citopatológicos              34. Torvinen S, Nieminen P, Lehtinen M, Paavonen J, Demarteau
+    e colposcópico em relação ao exame histopatológico na                       N, Hahl J. Cost effectiveness of prophylactic HPV 16/18
+    identiﬁcação de lesões intra-epiteliais cervicais. Rev Assoc                vaccination in Finland: results from a modelling exercise. J
+    Med Bras. 2002;48:140–4.                                                     Med Econ. 2010;13:284–94.
+21. Brasil. Ministério da Saúde. Secretaria de Assistência à Saúde.          35. Dee A, Howell F. A cost-utility analysis of adding a bivalent
+    Instituto Nacional do Câncer. Viva Mulher. Câncer de Colo de                 or quadrivalent HPV vaccine to the Irish cervical screening
+    Útero: informações técnico-gerenciais e ações desenvolvidas.               programme. Eur J Public Health. 2010;20:213–9.
+    Rio de Janeiro (RJ): INCA; 2002.                                         36. Kulasingam SL, Benard S, Barnabas RV, Largeron N, Myers ER.
+22. Brasil. Ministério da Saúde. Secretaria de Assistência à Saúde.              Adding a quadrivalent human papillomavirus vaccine to the
+    Tabela de procedimentos, medicamentos e OPM do SUS.                          UK cervical cancer screening programme: a cost-effectiveness
+    Competência Janeiro de 2013. Brasília (DF): MS; 2013.                        analysis. Cost Eff Resour Alloc. 2008;6:4.
+23. Surveillance, Epidemiology, End Results (SEER) cancer                    37. Kim JJ, Goldie SJ. Health and economic implications of HPV
+    statistics review, 1975-2001. United States National Cancer                  vaccination in the United States. N Engl J Med.
+    Institute; 2005. [cited 28 Nov 2010]. Available from:                        2008;359:821–32.
+    http://seer.cancer.gov/csr/1975 2001                                     38. Kok IMCM, Ballegooijen MV, Habbema JDF. Cost-effectiveness
+24. Myers ER, Green S, Lipkus I. Patient preferences for health                  analysis of human papillomavirus vaccination in the
+    states related to HPV infection: visual analogue scales versus               Netherlands. J Natl Cancer Inst. 2009;101:
+    time trade-off elicitation. In: Proceedings of the 21st                      1083–92.
+    International Papillomavirus Conference. 2004. February                  39. Kane MA. Global implementation of human papillomavirus
+    20-26.                                                                       (HPV) vaccine: Lessons from hepatitis B vaccine. Gynecol
+25. Brasil. Ministério da Saúde. Portal Saúde. Mulheres atingem                  Oncol. 2010;117 2 Suppl:S32–5.
+    meta de vacinação contra rubéola. Brasília (DF); 2008. [cited           40. Kawai K, Araujo GTB, Fonseca M, Pillsbury M, Singhal PK.
+    2013 Jan 15]. Available from: http://portal.saude.gov.br/portal/             Estimated health and economic impact of quadrivalent HPV
+    saude/visualizar texto.cfm?idtxt=30033                                       (types 6/11/16/18) vaccination in Brazil using a transmission
+26. Brasil. Ministério da Saúde. Secretaria de Atenção à Saúde.                 dynamic model. BMC Infect Dis. 2012;12:250–9.
+    Instituto Nacional de Câncer. Parecer técnico conjunto n◦                41. Kim JJ, Andres-Beck B, Goldie SJ. The value of including boys
+    01/2011/SVS/SVTIE/SAS/INCA-MS. Brasília (DF); 2011. [cited                   in an HPV vaccination programme: a cost-effectiveness
+    2013 Feb 16]. Available from: http://portal.saude.gov.br/                    analysis in a low-resource setting. Br J Cancer. 2007;97:
+    portal/arquivos/pdf/parecer tecnico conj n1 2011 hpv.pdf                     1322–8.
+27. WPAHO. Pan American Health Organization. 49◦ Conselho                    42. Colantonio L, Gómez JA, Demarteau N, Standaert B,
+    Diretor: Fundo Rotativo da Organização Pan-Americana de                     Pichón-Rivière A, Augustovski F. Cost-effectiveness analysis
+    Saúde para a compra de vacinas. Washigton (DC); 2009. [2013                  of a cervical cancer vaccine in ﬁve Latin American countries.
+    feb16]. Available from: http://www2.paho.org/hq/                             Vaccine. 2009;27:5519–29.
+    dmdocuments/2009/CD49-21-p.pdf                                           43. Goldie SJ, Kim JJ, Kobus K, Goldhaber-Fiebert JD, Salomon J,
+28. Lippman A, Melnychuk R, Shimmin C, Boscoe M. Human                           O’shea MK, et al. Cost-effectiveness of HPV 16, 18 vaccination
+    papillomavirus, vaccines and women’s health: questions                       in Brazil. Vaccine. 2007;25:6257–70.
+    and cautions. CMAJ. 2007;177:1–4.
+
